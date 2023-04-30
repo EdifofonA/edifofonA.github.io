@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Hello there!",
-    "section": "",
-    "text": "I am a Research Fellow in the Health Economics Unit at the Centre for Health Policy, Melbourne School of Population and Global Health. I also serve as strategy advisor with Helpman Development Institute, Abuja, Nigeria. In 2021, I completed a Master’s in Public Health University of Melbourne, Australia, with specialization in Health Economics. This September, I will be joining University of Sheffield Four-year Wellcome PhD studentships in Public Health Economics and Decision Science.\nMy previous work focused on health expenditure studies, healthcare utilization surveys, and other analysis to inform public financing of health in Nigeria. I have recently provided support for health economic analyses and training in Malaysia, Papua New Guinea, and Bangladesh. My current interests include applying methods in cost-effectiveness analysis using individual-level data, healthcare decision modelling, and economic evaluation using infectious disease models to inform decision making on health interventions in developing countries.\nI teach introductory classes on use of R and the tidyverse."
-  },
-  {
     "objectID": "blog/2022/hurdle-lognormal-gaussian-brms/index.html",
     "href": "blog/2022/hurdle-lognormal-gaussian-brms/index.html",
     "title": "Modeling outcomes with many zeros using Bayesian hurdle lognormal and Gaussian regression",
@@ -54,5 +47,12 @@
     "title": "Curriculum vitæ",
     "section": "",
     "text": "Download current CV"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hello there!",
+    "section": "",
+    "text": "I am a Research Fellow in the Health Economics Unit at the Centre for Health Policy, Melbourne School of Population and Global Health. I also serve as strategy advisor with Helpman Development Institute, Abuja, Nigeria. In 2021, I completed a Master’s in Public Health University of Melbourne, Australia, with specialization in Health Economics. This September, I will be joining University of Sheffield Four-year Wellcome PhD studentships in Public Health Economics and Decision Science.\nMy previous work focused on health expenditure studies, healthcare utilization surveys, and other analysis to inform public financing of health in Nigeria. I have recently provided support for health economic analyses and training in Malaysia, Papua New Guinea, and Bangladesh. My current interests include applying methods in cost-effectiveness analysis using individual-level data, healthcare decision modelling, and economic evaluation using infectious disease models to inform decision making on health interventions in developing countries.\nI teach introductory classes on use of R and the tidyverse."
   }
 ]
