@@ -1,0 +1,34 @@
+# Date format
+date-format: "dddd, MMMM D, YYYY"
+
+# Add blog-post class to the banner header area
+format: 
+  html:
+    code-tools: true
+    #embed-resources: true
+    #comments:
+      #giscus: 
+        #repo: andrewheiss/ath-quarto
+        #category: Blog comments
+        #category-id: DIC_kwDOIg6EJc4CSz92
+        #mapping: pathname
+    quarto-template-params:
+      banner-header-class: "blog-post"
+# Default for table of contents
+toc: true
+toc-title: Contents
+toc-location: left
+
+#freeze: true
+
+# Default knitr options
+execute:
+  echo: true
+  message: true
+  warning: true
+
+# Default author
+author:
+  - name: Edifofon Akpan
+    url: https://www.edifofon.com/
+    orcid: 0000-0002-6646-206X

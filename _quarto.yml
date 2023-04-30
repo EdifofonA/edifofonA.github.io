@@ -1,0 +1,74 @@
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+  # render:
+  #   - "*.qmd"
+  #   - "*.md"
+  #   - "!etc/"
+  # 
+  # resources:
+  #   - "files/**"
+  #   - "etc/**"
+
+website:
+  title: "Edifofon Akpan"
+  description: "Edifofon is a research associate at The University of Melbourne Australia and Helpman Institute Abuja Nigeria"
+  favicon: "/files/icon.png"
+  site-url: "https://www.edifofon.com"
+  repo-url: "https://github.com/EdifofonA/website"
+
+  # google-analytics: "UA-527449-5"
+
+#  twitter-card: 
+#    image: "/files/profiles/twitter-card-large.png"
+#    card-style: summary_large_image
+#    creator: "@andrewheiss"
+#    site: "@andrewheiss"
+  
+  navbar:
+    pinned: true
+
+    left:
+      - text: "About"
+        href: "index.qmd"
+      - text: "CV"
+        href: "cv/index.qmd"
+      - text: "Blog"
+        href: "blog/index.qmd"
+        
+    right:
+      - icon: envelope
+        aria-label: email
+        href: "mailto:hello@edifofon.com"
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/edifofon_
+      - icon: github
+        aria-label: github
+        href: https://github.com/EdifofonA
+      - icon: linkedin
+        aria-label: linkedin
+        href: https://www.linkedin.com/in/edifofon
+
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+    toc: true
+    #embed-resources: true
+    #code-link: true
+    #anchor-sections: true
+    #fig-cap-location: margin
+    #reference-location: margin
+    #footnotes-hover: true
+    #highlight-style: monokai
+
+editor: visual
+
