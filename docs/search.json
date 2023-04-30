@@ -9,16 +9,16 @@
   {
     "objectID": "blog/2023/bibdesk-to-zotero-pandoc/index.html",
     "href": "blog/2023/bibdesk-to-zotero-pandoc/index.html",
-    "title": "How to migrate from BibDesk to Zotero for pandoc-based writing",
+    "title": "Title of blog post",
     "section": "",
-    "text": "When I started my first master’s degree program in 2008, I decided to stop using Word for all my academic writing and instead use plain text Markdown for everything. Markdown itself had been a thing for 4 years, and MultiMarkdown—a pandoc-like extension of Markdown that could handle BibTeX bibliographies—was brand new. I did all my writing for my courses and my thesis in Markdown and converted it all to PDF through LaTeX using MultiMarkdown. I didn’t know about pandoc yet, so I only ever converted to PDF, not HTML or Word.\nI stored all my bibliographic references in a tiny little references.bib BibTeX file that I managed with BibDesk. BibDesk is a wonderful and powerful program with an active developer community and it does all sorts of neat stuff like auto-filing PDFs, importing references from DOIs, searching for references on the internet from inside the program, and just providing a nice overall front end for dealing with BibTeX files.\nI kept using my MultiMarkdown + LaTeX output system throughout my second master’s degree, and my references.bib file and PDF database slowly grew. R Markdown hadn’t been invented yet and I still hadn’t discovered pandoc, so living in a mostly LaTeX-based world was fine.\nWhen I started my PhD in 2012, something revolutionary happened: the {knitr} package was invented. The new R Markdown format let you to mix R code with Markdown text and create multiple outputs (HTML, LaTeX, and docx) through pandoc. I abandoned MultiMarkdown and fully converted to pandoc (thanks also in part to Kieran Healy’s Plain Person’s Gide to Plain Text Social Science). Since 2012, I’ve written exclusively in pandoc-flavored Markdown and always make sure that I can convert everything to PDF, HTML, and Word (see the “Manuscript” entry in the navigation bar here, for instance, where you can download the preprint version of that paper in a ton of different formats). I recently converted a bunch of my output templates to Quarto pandoc too.\nDuring all this time, I didn’t really keep up with other reference managers. I used super early Zotero as an undergrad back in 2006–2008, but it didn’t fit well with my Markdown-based workflow, so I kind of ignored it. I picked it up again briefly at the beginning of my PhD, but I couldn’t get it to play nicely with R Markdown and pandoc, so I kept using trusty old BibDesk. My references.bib file got bigger and bigger as I took more and more doctoral classes and did more research, but BibDesk handled the growing library just fine. As of today, I’ve got 1,400 items in there with nearly 1,000 PDFs, and everything still works great—mostly."
+    "text": "Sample text."
   },
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "writing\n\n\nmarkdown\n\n\ncitations\n\n\n\n\nTips, tricks, and rationale for converting from a single big BibTeX file to a Zotero database\n\n\n\n\n\n\nJanuary 8, 2023\n\n\nEdifofon Akpan\n\n\n\n\n\n\nNo matching items"
+    "text": "writing\n\n\nmarkdown\n\n\ncitations\n\n\n\n\nSample description\n\n\n\n\n\n\nJanuary 8, 2023\n\n\nEdifofon Akpan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/index.html#section-1",
