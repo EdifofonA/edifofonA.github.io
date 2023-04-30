@@ -193,7 +193,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#the-basics" id="toc-the-basics" class="nav-link" data-scroll-target="#the-basics">The Basics</a></li>
   </ul>
 </nav>
 </nav>
@@ -244,23 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>In <a href="https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/">a research project I’ve been working on for several years</a> now, we’re interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country receives and the proportion of that aid dedicated to contentious vs.&nbsp;non-contentious causes or issues. These outcome variables are easily measurable thanks to <a href="https://www.aiddata.org/">the AidData project</a>, but they post a tricky methodological issue. The amount of foreign aid countries receive can both be huge (in the hundreds of millions or even billions of dollars), or completely zero. Moreover, the proportion of aid allocated to specific purposes is inherently bound between 0% and 100%, but can sometimes be exactly 0% or 100%. Using a statistical model that fits the distribution of these kinds of variables is important for modeling accuracy, but it’s a more complicated process than running a basic linear OLS regression with <code>lm()</code>.</p>
-<p><a href="https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/">In a previous post</a>, I wrote a guide to doing beta, zero-inflated beta, and zero-one-inflated beta regression for outcome variables that are bound between 0 and 1 and that can include 0 and/or 1. (That post was a side effect of working on this project on foreign aid and anti-NGO restrictions.)</p>
-<p>Beta regression (and its zero- and zero-one-inflated varieties) works really well with these kinds of outcome variables, and you can end up with richly defined models and well-fitting models. Zero-inflated beta regression doesn’t work on outcomes that aren’t limited to 0–1, though. For outcome variables that extend beyond 1, we can use hurdle models instead, which follow the same general approach as zero-inflated models. We define a mixture of models for two separate processes:</p>
-<ol type="1">
-<li>A model that predicts if the outcome is zero or not zero</li>
-<li>If the outcome is not zero, a model that predicts what the value of the outcome is</li>
-</ol>
-</section>
-<section id="the-basics" class="level1">
-<h1>The Basics</h1>
-<p>Hurdle models do a great job at fitting the data well and providing accurate predictions. They’re a little unwieldy to work with though, since they involve so many different moving parts.</p>
-<p>This post is a guide (mostly for future me) for how to create, manipulate, understand, analyze, and plot hurlde models in a Bayesian way using R and Stan (through <a href="https://paul-buerkner.github.io/brms/"><strong>brms</strong></a>).</p>
-<p>Throughout this post, we’ll use data from two datasets to explore a couple different questions:</p>
-<ol type="1">
-<li>What happens to a country’s GDP per capita as its life expectancy increases? We’ll use data from the Gapminder Project (though the <a href="https://github.com/jennybc/gapminder"><strong>gapminder</strong> R package</a>)</li>
-<li>What is the effect of bill length on body mass in Antarctic penguins? We’ll use data from the <a href="https://allisonhorst.github.io/palmerpenguins/"><strong>palmerpenguins</strong> R package</a>.</li>
-</ol>
+<p>In <a href="https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/">a research project I’ve been working on for several years</a> now, we’re interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country</p>
 
 
 <!-- -->
@@ -480,25 +463,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>In <span class="co">[</span><span class="ot">a research project I've been working on for several years</span><span class="co">](https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/)</span> now, we're interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country receives and the proportion of that aid dedicated to contentious vs. non-contentious causes or issues. These outcome variables are easily measurable thanks to <span class="co">[</span><span class="ot">the AidData project</span><span class="co">](https://www.aiddata.org/)</span>, but they post a tricky methodological issue. The amount of foreign aid countries receive can both be huge (in the hundreds of millions or even billions of dollars), or completely zero. Moreover, the proportion of aid allocated to specific purposes is inherently bound between 0% and 100%, but can sometimes be exactly 0% or 100%. Using a statistical model that fits the distribution of these kinds of variables is important for modeling accuracy, but it's a more complicated process than running a basic linear OLS regression with <span class="in">`lm()`</span>.</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">In a previous post</span><span class="co">](https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/)</span>, I wrote a guide to doing beta, zero-inflated beta, and zero-one-inflated beta regression for outcome variables that are bound between 0 and 1 and that can include 0 and/or 1. (That post was a side effect of working on this project on foreign aid and anti-NGO restrictions.)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Beta regression (and its zero- and zero-one-inflated varieties) works really well with these kinds of outcome variables, and you can end up with richly defined models and well-fitting models. Zero-inflated beta regression doesn't work on outcomes that aren't limited to 0--1, though. For outcome variables that extend beyond 1, we can use hurdle models instead, which follow the same general approach as zero-inflated models. We define a mixture of models for two separate processes:</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>A model that predicts if the outcome is zero or not zero</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>If the outcome is not zero, a model that predicts what the value of the outcome is</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu"># The Basics</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Hurdle models do a great job at fitting the data well and providing accurate predictions. They're a little unwieldy to work with though, since they involve so many different moving parts.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>This post is a guide (mostly for future me) for how to create, manipulate, understand, analyze, and plot hurlde models in a Bayesian way using R and Stan (through <span class="co">[</span><span class="ot">**brms**</span><span class="co">](https://paul-buerkner.github.io/brms/)</span>).</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Throughout this post, we'll use data from two datasets to explore a couple different questions:</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>What happens to a country's GDP per capita as its life expectancy increases? We'll use data from the Gapminder Project (though the <span class="co">[</span><span class="ot">**gapminder** R package</span><span class="co">](https://github.com/jennybc/gapminder)</span>)</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>What is the effect of bill length on body mass in Antarctic penguins? We'll use data from the <span class="co">[</span><span class="ot">**palmerpenguins** R package</span><span class="co">](https://allisonhorst.github.io/palmerpenguins/)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>In <span class="co">[</span><span class="ot">a research project I've been working on for several years</span><span class="co">](https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/)</span> now, we're interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
