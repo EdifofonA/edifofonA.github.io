@@ -26,22 +26,4 @@ options(digits = 3, width = 300)
 
 # Introduction
 
-In [a research project I've been working on for several years](https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/) now, we're interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country receives and the proportion of that aid dedicated to contentious vs. non-contentious causes or issues. These outcome variables are easily measurable thanks to [the AidData project](https://www.aiddata.org/), but they post a tricky methodological issue. The amount of foreign aid countries receive can both be huge (in the hundreds of millions or even billions of dollars), or completely zero. Moreover, the proportion of aid allocated to specific purposes is inherently bound between 0% and 100%, but can sometimes be exactly 0% or 100%. Using a statistical model that fits the distribution of these kinds of variables is important for modeling accuracy, but it's a more complicated process than running a basic linear OLS regression with `lm()`.
-
-[In a previous post](https://www.andrewheiss.com/blog/2021/11/08/beta-regression-guide/), I wrote a guide to doing beta, zero-inflated beta, and zero-one-inflated beta regression for outcome variables that are bound between 0 and 1 and that can include 0 and/or 1. (That post was a side effect of working on this project on foreign aid and anti-NGO restrictions.)
-
-Beta regression (and its zero- and zero-one-inflated varieties) works really well with these kinds of outcome variables, and you can end up with richly defined models and well-fitting models. Zero-inflated beta regression doesn't work on outcomes that aren't limited to 0--1, though. For outcome variables that extend beyond 1, we can use hurdle models instead, which follow the same general approach as zero-inflated models. We define a mixture of models for two separate processes:
-
-1.  A model that predicts if the outcome is zero or not zero
-2.  If the outcome is not zero, a model that predicts what the value of the outcome is
-
-# The Basics
-
-Hurdle models do a great job at fitting the data well and providing accurate predictions. They're a little unwieldy to work with though, since they involve so many different moving parts.
-
-This post is a guide (mostly for future me) for how to create, manipulate, understand, analyze, and plot hurlde models in a Bayesian way using R and Stan (through [**brms**](https://paul-buerkner.github.io/brms/)).
-
-Throughout this post, we'll use data from two datasets to explore a couple different questions:
-
-1.  What happens to a country's GDP per capita as its life expectancy increases? We'll use data from the Gapminder Project (though the [**gapminder** R package](https://github.com/jennybc/gapminder))
-2.  What is the effect of bill length on body mass in Antarctic penguins? We'll use data from the [**palmerpenguins** R package](https://allisonhorst.github.io/palmerpenguins/).
+In [a research project I've been working on for several years](https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/) now, we're interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country
