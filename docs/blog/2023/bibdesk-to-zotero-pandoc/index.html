@@ -204,7 +204,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#my-longstanding-workflow-for-writing-citing-and-pdf-management" id="toc-my-longstanding-workflow-for-writing-citing-and-pdf-management" class="nav-link active" data-scroll-target="#my-longstanding-workflow-for-writing-citing-and-pdf-management">My longstanding workflow for writing, citing, and PDF management</a></li>
+  <li><a href="#why-switch-away-from-bibtex-and-bibdesk" id="toc-why-switch-away-from-bibtex-and-bibdesk" class="nav-link" data-scroll-target="#why-switch-away-from-bibtex-and-bibdesk">Why switch away from BibTeX and BibDesk?</a>
+  <ul class="collapse">
+  <li><a href="#problem-1-cross-device-reading" id="toc-problem-1-cross-device-reading" class="nav-link" data-scroll-target="#problem-1-cross-device-reading">Problem 1: Cross-device reading</a></li>
+  <li><a href="#problem-2-collaboration-across-many-projects-with-many-coauthors" id="toc-problem-2-collaboration-across-many-projects-with-many-coauthors" class="nav-link" data-scroll-target="#problem-2-collaboration-across-many-projects-with-many-coauthors">Problem 2: Collaboration across many projects with many coauthors</a></li>
+  <li><a href="#problem-3-bibtex-was-designed-for-latexbut-just-latex" id="toc-problem-3-bibtex-was-designed-for-latexbut-just-latex" class="nav-link" data-scroll-target="#problem-3-bibtex-was-designed-for-latexbut-just-latex">Problem 3: BibTeX was designed for LaTeX—but just LaTeX</a></li>
+  <li><a href="#the-solution-zotero" id="toc-the-solution-zotero" class="nav-link" data-scroll-target="#the-solution-zotero">The solution: Zotero</a></li>
+  </ul></li>
+  <li><a href="#preparing-for-the-migration" id="toc-preparing-for-the-migration" class="nav-link" data-scroll-target="#preparing-for-the-migration">Preparing for the migration</a>
+  <ul class="collapse">
+  <li><a href="#make-a-backup" id="toc-make-a-backup" class="nav-link" data-scroll-target="#make-a-backup">Make a backup</a></li>
+  <li><a href="#install-extensions" id="toc-install-extensions" class="nav-link" data-scroll-target="#install-extensions">Install extensions</a></li>
+  <li><a href="#ratings-and-read-status" id="toc-ratings-and-read-status" class="nav-link" data-scroll-target="#ratings-and-read-status">Ratings and read status</a></li>
+  <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
+  <li><a href="#citekeys" id="toc-citekeys" class="nav-link" data-scroll-target="#citekeys">Citekeys</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -253,13 +268,102 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>When I started my first master’s degree program in 2008, I decided to stop using Word for all my academic writing and instead use plain text Markdown for everything. <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> itself had been a thing for 4 years, and <a href="https://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>—a <a href="https://en.wikipedia.org/wiki/Pandoc">pandoc</a>-like extension of Markdown that could handle BibTeX</p>
+<section id="my-longstanding-workflow-for-writing-citing-and-pdf-management" class="level2">
+<h2 class="anchored" data-anchor-id="my-longstanding-workflow-for-writing-citing-and-pdf-management">My longstanding workflow for writing, citing, and PDF management</h2>
+<p>When I started my first master’s degree program in 2008, I decided to stop using Word for all my academic writing and instead use plain text Markdown for everything. <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> itself had been a thing for 4 years, and <a href="https://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>—a <a href="https://en.wikipedia.org/wiki/Pandoc">pandoc</a>-like extension of Markdown that could handle BibTeX bibliographies—was brand new. I did all my writing for my courses and my thesis in Markdown and converted it all to PDF through LaTeX using MultiMarkdown. I didn’t know about pandoc yet, so I only ever converted to PDF, not HTML or Word.</p>
+<p>I stored all my bibliographic references in a tiny little <code>references.bib</code> BibTeX file that I managed with <a href="https://bibdesk.sourceforge.io/">BibDesk</a>. BibDesk is a wonderful and powerful program with an active developer community and it does all sorts of neat stuff like auto-filing PDFs, importing references from DOIs, searching for references on the internet from inside the program, and just providing a nice overall front end for dealing with BibTeX files.</p>
+<p>I kept using my MultiMarkdown + LaTeX output system throughout my second master’s degree, and my <code>references.bib</code> file and PDF database slowly grew. R Markdown hadn’t been invented yet and I still hadn’t discovered pandoc, so living in a mostly LaTeX-based world was fine.</p>
+<p>When I started my PhD in 2012, something revolutionary happened: <a href="https://yihui.org/knitr/">the {knitr} package</a> was invented. The new <a href="https://rmarkdown.rstudio.com/">R Markdown</a> format let you to mix R code with Markdown text and create multiple outputs (HTML, LaTeX, and docx) through pandoc. I abandoned MultiMarkdown and fully converted to pandoc (thanks also in part to Kieran Healy’s <a href="https://plain-text.co/"><em>Plain Person’s Gide to Plain Text Social Science</em></a>). Since 2012, I’ve written exclusively in pandoc-flavored Markdown and always make sure that I can convert everything to PDF, HTML, and Word (see the “Manuscript” entry <a href="https://stats.andrewheiss.com/cautioning-canary/">in the navigation bar here</a>, for instance, where you can download the preprint version of that paper in a ton of different formats). I recently converted <a href="https://github.com/andrewheiss/hikmah-academic-quarto">a bunch of my output templates</a> to <a href="https://quarto.org/">Quarto pandoc</a> too.</p>
+<p>During all this time, I didn’t really keep up with other reference managers. I used super early <a href="https://www.zotero.org/">Zotero</a> as an undergrad back in 2006–2008, but it didn’t fit well with my Markdown-based workflow, so I kind of ignored it. I picked it up again briefly at the beginning of my PhD, but I couldn’t get it to play nicely with R Markdown and pandoc, so I kept using trusty old BibDesk. My <code>references.bib</code> file got bigger and bigger as I took more and more doctoral classes and did more research, but BibDesk handled the growing library just fine. As of today, I’ve got 1,400 items in there with nearly 1,000 PDFs, and everything still works great—mostly.</p>
+</section>
+<section id="why-switch-away-from-bibtex-and-bibdesk" class="level2">
+<h2 class="anchored" data-anchor-id="why-switch-away-from-bibtex-and-bibdesk">Why switch away from BibTeX and BibDesk?</h2>
+<p>BibDesk got me through my dissertation and all my research projects up until now, so why consider switching away to some other system? Over the past few years, as I’ve done more reading on my iPad and worked on more coauthored projects, I’ve run into a few pain points in my citation workflow.</p>
+<section id="problem-1-cross-device-reading" class="level3">
+<h3 class="anchored" data-anchor-id="problem-1-cross-device-reading">Problem 1: Cross-device reading</h3>
+<p>I enjoy reading PDFs on my iPad (particularly in the <a href="https://www.folia.com/iannotate">iAnnotate app</a>), but getting PDFs from BibDesk onto the iPad has always required a bizarre dance:</p>
+<ol type="1">
+<li>Store <code>references.bib</code> and the BibDesk-managed folder of PDFs in Dropbox</li>
+<li>Use the <a href="https://sites.google.com/site/appsformaths/references">References</a> iPad app to open the BibTeX file from Dropbox on the iPad</li>
+<li>Use iAnnotate to navigate Dropbox and find the PDF I want to read</li>
+<li>Read and annotate the PDF in iAnnotate</li>
+<li>Send the finished PDF from iAnnotate back to Dropbox and go back to References to ensure that the annotated PDF updates</li>
+</ol>
+<p>I’d often get sick of this convoluted process and just find the PDF on my computer and AirDrop it to my iPad directly, completely circumventing Dropbox. I’d then AirDrop it back to my computer and attach the marked up PDF to the reference in BibDesk. It’s inconvenient, but less inconvenient than bouncing around a bunch of different apps and hoping everything works.</p>
+</section>
+<section id="problem-2-collaboration-across-many-projects-with-many-coauthors" class="level3">
+<h3 class="anchored" data-anchor-id="problem-2-collaboration-across-many-projects-with-many-coauthors">Problem 2: Collaboration across many projects with many coauthors</h3>
+<p>Collaboration with a single huge <code>references.bib</code> file is impossible. I could share my Dropbox folder with coauthors, but then they’d see all my entries and have access to all my annotated PDFs, which seems like overkill. As I started working with coauthors, I decided to make smaller project-specific <code>.bib</code> files that would be shareable and editable.</p>
+<p>This is great for project modularity—see how <a href="https://github.com/andrewheiss/cautioning-canary/blob/master/manuscript/bibliography.bib">this <code>bibliography.bib</code> file</a> only contains things we cited? But it caused <em>major</em> synchronization problems. If me or a coauthor makes any edits to the project-specific files (adding a DOI to an existing entry, adding a new entry, etc.), those changes don’t show up in my big master <code>references.bib</code> file. I have to remember to copy those changes to the main file, and I never remember. With some recent projects, I’ve actually been copying some entries from previous projects’ <code>.bib</code> files rather than from the big <code>references.bib</code> file. Everything’s diverging and it’s a pain.</p>
+</section>
+<section id="problem-3-bibtex-was-designed-for-latexbut-just-latex" class="level3">
+<h3 class="anchored" data-anchor-id="problem-3-bibtex-was-designed-for-latexbut-just-latex">Problem 3: BibTeX was designed for LaTeX—but just LaTeX</h3>
+<p>BibTeX works great with LaTeX. That’s why it was invented in the first place! The fact that things like pandoc work with it is partially a historical accident—<code>.bib</code> files were a convenient and widely used plain text bibliography format, so pandoc and MultiMarkdown used BibTeX for citations.</p>
+<p>But citations are often more complicated than BibTeX can handle. Consider the LaTeX package <a href="https://ctan.org/pkg/biblatex-chicago?lang=en">biblatex-chicago</a>—in order to be fully compliant with all the intricacies of the Chicago Manual of Style, it has to expand the BibTeX (technically BibLaTeX) format to include fields like <code>entrysubtype</code> for distinguishing between magazine/newspaper articles and journal articles, among dozens of other customizations and tweaks. BibTeX has a limited set of entry types, and anything that’s not one of those types gets shoehorned into the <code>misc</code> type.</p>
+<p>Internally, programs like pandoc that can read BibTeX files convert them into a standard <a href="https://en.wikipedia.org/wiki/Citation_Style_Language">Citation Style Language (CSL)</a> format, which it then uses to format references as Chicago, APA, MLA, or whatever. It would be great to store all my citations in a CSL-compliant format in the first place rather than as a LaTeX-only format that has to be constantly converted on-the-fly when converting to any non-LaTeX output.</p>
+</section>
+<section id="the-solution-zotero" class="level3">
+<h3 class="anchored" data-anchor-id="the-solution-zotero">The solution: Zotero</h3>
+<p>Zotero conveniently fixes all these issues:</p>
+<ol type="1">
+<li><p>It has <a href="https://www.zotero.org/support/sync">a synchronization service</a> that works across platforms (including iOS). <a href="https://ikashnitsky.github.io/2019/zotero/">It can work with Dropbox too</a> if you don’t want to be bound by their file size limit or pay for extra storage, though I ended up paying for storage to (1) support open source software and (2) not have to deal with multiple programs. I’ve been doing the BibDesk → iAnnotate → Dropbox → MacBook → AirDrop dance for too many years—I just want Zotero to handle all the syncing for me.</p></li>
+<li><p>It’s <strong>super easy</strong> to collaborate with Zotero. You can create shared group libraries with different sets of coauthors and not worry about Dropbox synchronization issues or accidental deletion of <code>}</code> characters in the <code>.bib</code> file. For one of my reading-intensive class, <a href="https://compasp23.classes.andrewheiss.com/class/">I’ve even created a shared Zotero group library</a> that all the students can join and cite from, which is neat.</p>
+<p>It’s also far easier to maintain a master list of references. You can create a <a href="https://www.zotero.org/support/collections_and_tags">Zotero collection</a> for specific projects, and items can live in multiple collections. Editing an item in one collection updates that item in all other collections. Zotero treats collections like iTunes/Apple Music playlists—just like songs can belong to multiple playlists, bibliographic entries can belong to multiple collections.</p></li>
+<li><p>Zotero follows the CSL standard that pandoc uses. It was the first program to adopt CSL (way back in 2006!). It supports all kinds of entry types and fields, beyond what BibTeX supports.</p></li>
+</ol>
+</section>
+</section>
+<section id="preparing-for-the-migration" class="level2">
+<h2 class="anchored" data-anchor-id="preparing-for-the-migration">Preparing for the migration</h2>
+<p>Migrating my big <code>.references.bib</code> file to Zotero was a relatively straightforward process, but it required a few minor shenanigans to get everything working right.</p>
+<section id="make-a-backup" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-backup">Make a backup</h3>
+<p>Preparing everything for migration meant I had to make a ton of edits to the original <code>references.bib</code> file, so I made a copy of it first and worked with the copy.</p>
+</section>
+<section id="install-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="install-extensions">Install extensions</h3>
+<p>To make Zotero work nicely with a pandoc-centric writing workflow, and to make file management and tag management easier, I installed these three extensions:</p>
+<ul>
+<li><a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a></li>
+<li><a href="http://zotfile.com/">ZotFile</a></li>
+<li><a href="https://github.com/windingwind/zotero-tag">Zotero Tag</a></li>
+</ul>
+</section>
+<section id="ratings-and-read-status" class="level3">
+<h3 class="anchored" data-anchor-id="ratings-and-read-status">Ratings and read status</h3>
+<p>BibDesk allows you to add a couple extra metadata fields to entries for ratings and to mark them as read. I’ve used these fields for years and find them super useful for keeping track of how much I like articles and for remembering which ones I’ve actually finished.</p>
+<p>Internally, BibDesk stores this data as entries in the raw BibTex:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">the_citekey_for_this_entry</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Whoever},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {Whatever},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">...</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">rating</span> = {4},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">read</span> = {1}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>I decided to treat these as Zotero tags, which BibDesk calls keywords. I considered making some sort of programmatic solution and writing a script to convert all the <code>rating</code> and <code>read</code> fields to <code>keywords</code>, but that seemed like too much work—many entries have existing keywords and parsing the file and concatenating ratings and read status to the list of keywords would be hard.</p>
+<p>So instead I sorted all my entries in BibDesk by rating, selected all the 5 star ones and added a <code>zzzzz</code> tag, selected all the 4 star ones and added a <code>zzzz</code> tag, and so on (so that 1 star entries got a <code>z</code>) tag. I then sorted the entries by read status and assigned <code>xxx</code> to all the ones I’ve read. These tag names were just temporary—in Zotero I changed these to emojis (⭐️⭐️⭐️ and ✅), but because I was worried about transferring complex Unicode characters like emojis across programs, I decided to simplify things by temporarily just using ASCII characters.</p>
+</section>
+<section id="files" class="level3">
+<h3 class="anchored" data-anchor-id="files">Files</h3>
+<p>I wanted all the PDFs that Zotero would manage to have nice predictable filenames. In BibDesk, I used this pattern. That’s been fine, but it uses spaces in the file name and doesn’t remove any punctuation or special characters, so it was a little trickier to work with in the terminal or with scripts or for easy consistent searching (especially when searching in the iPad Dropbox app when looking for a PDF to read). But because I set up that pattern in 2008, <a href="https://en.wikipedia.org/wiki/Path_dependence">path dependency</a> kind of locked me in and I’ve been unwilling to change it since.</p>
+<p>Since I’m starting with a whole new reference manager, I figured it was time to adopt a better PDF naming system. In the ZotFile preferences, I set this pattern:</p>
+<pre><code>{%a-}{%y-}{%t}</code></pre>
+<p>…which translates to</p>
+<pre><code>up_to_three_last_names-year-first_few_characters_of_title.pdf</code></pre>
+</section>
+<section id="citekeys" class="level3">
+<h3 class="anchored" data-anchor-id="citekeys">Citekeys</h3>
+<p>In BibDesk, I’ve had a citation key pattern that I’ve used for years: <code>Lastname:Year</code>, with up to three last names for coauthored things, and an incremental lowercase letter in the case of duplicates:</p>
+<pre><code>HeissKelley:2017
+HeissKelley:2017a
+Imbens:2021
+LundbergJohnsonStewart:2021</code></pre>
+<p>Zotero and Better BibTeX preserve citekeys when you import a <code>.bib</code> file, but I wanted to make sure I keep using this system for new items I add going forward, so I changed the Better BibTeX preferences to use the same pattern:</p>
+<pre><code>auth(0,1) + auth(0,2) + auth(0,3) + ":" + year</code></pre>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -447,30 +551,148 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "How to migrate from BibDesk to Zotero for pandoc-based writing"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2023-01-08</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Tips, tricks, and rationale for converting from a single big BibTeX file to a Zotero database"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "zotero-final.png"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span><span class="co"> </span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "zotero-final.png"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">open-graph:</span><span class="co"> </span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "zotero-final.png"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - writing</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - markdown</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - citations</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">fig.width =</span> <span class="dv">6</span>, <span class="at">fig.height =</span> <span class="fl">3.8</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                      <span class="at">fig.align =</span> <span class="st">"center"</span>, <span class="at">fig.retina =</span> <span class="dv">3</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">out.width =</span> <span class="st">"85%"</span>, <span class="at">collapse =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>When I started my first master's degree program in 2008, I decided to stop using Word for all my academic writing and instead use plain text Markdown for everything. <span class="co">[</span><span class="ot">Markdown</span><span class="co">](https://en.wikipedia.org/wiki/Markdown)</span> itself had been a thing for 4 years, and <span class="co">[</span><span class="ot">MultiMarkdown</span><span class="co">](https://fletcherpenney.net/multimarkdown/)</span>---a <span class="co">[</span><span class="ot">pandoc</span><span class="co">](https://en.wikipedia.org/wiki/Pandoc)</span>-like extension of Markdown that could handle BibTeX</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "How to migrate from BibDesk to Zotero for pandoc-based writing"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2023-01-08</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Tips, tricks, and rationale for converting from a single big BibTeX file to a Zotero database"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> "zotero-final.png"</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="an">twitter-card:</span><span class="co"> </span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "zotero-final.png"</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="an">open-graph:</span><span class="co"> </span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">    image: "zotero-final.png"</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - writing</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - markdown</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - citations</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">fig.width =</span> <span class="dv">6</span>, <span class="at">fig.height =</span> <span class="fl">3.8</span>,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>                      <span class="at">fig.align =</span> <span class="st">"center"</span>, <span class="at">fig.retina =</span> <span class="dv">3</span>,</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">out.width =</span> <span class="st">"85%"</span>, <span class="at">collapse =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## My longstanding workflow for writing, citing, and PDF management</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>When I started my first master's degree program in 2008, I decided to stop using Word for all my academic writing and instead use plain text Markdown for everything. <span class="co">[</span><span class="ot">Markdown</span><span class="co">](https://en.wikipedia.org/wiki/Markdown)</span> itself had been a thing for 4 years, and <span class="co">[</span><span class="ot">MultiMarkdown</span><span class="co">](https://fletcherpenney.net/multimarkdown/)</span>---a <span class="co">[</span><span class="ot">pandoc</span><span class="co">](https://en.wikipedia.org/wiki/Pandoc)</span>-like extension of Markdown that could handle BibTeX bibliographies---was brand new. I did all my writing for my courses and my thesis in Markdown and converted it all to PDF through LaTeX using MultiMarkdown. I didn't know about pandoc yet, so I only ever converted to PDF, not HTML or Word.</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>I stored all my bibliographic references in a tiny little <span class="in">`references.bib`</span> BibTeX file that I managed with <span class="co">[</span><span class="ot">BibDesk</span><span class="co">](https://bibdesk.sourceforge.io/)</span>. BibDesk is a wonderful and powerful program with an active developer community and it does all sorts of neat stuff like auto-filing PDFs, importing references from DOIs, searching for references on the internet from inside the program, and just providing a nice overall front end for dealing with BibTeX files.</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>I kept using my MultiMarkdown + LaTeX output system throughout my second master's degree, and my <span class="in">`references.bib`</span> file and PDF database slowly grew. R Markdown hadn't been invented yet and I still hadn't discovered pandoc, so living in a mostly LaTeX-based world was fine.</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>When I started my PhD in 2012, something revolutionary happened: <span class="co">[</span><span class="ot">the {knitr} package</span><span class="co">](https://yihui.org/knitr/)</span> was invented. The new <span class="co">[</span><span class="ot">R Markdown</span><span class="co">](https://rmarkdown.rstudio.com/)</span> format let you to mix R code with Markdown text and create multiple outputs (HTML, LaTeX, and docx) through pandoc. I abandoned MultiMarkdown and fully converted to pandoc (thanks also in part to Kieran Healy's <span class="co">[</span><span class="ot">*Plain Person's Gide to Plain Text Social Science*</span><span class="co">](https://plain-text.co/)</span>). Since 2012, I've written exclusively in pandoc-flavored Markdown and always make sure that I can convert everything to PDF, HTML, and Word (see the "Manuscript" entry <span class="co">[</span><span class="ot">in the navigation bar here</span><span class="co">](https://stats.andrewheiss.com/cautioning-canary/)</span>, for instance, where you can download the preprint version of that paper in a ton of different formats). I recently converted <span class="co">[</span><span class="ot">a bunch of my output templates</span><span class="co">](https://github.com/andrewheiss/hikmah-academic-quarto)</span> to <span class="co">[</span><span class="ot">Quarto pandoc</span><span class="co">](https://quarto.org/)</span> too.</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>During all this time, I didn't really keep up with other reference managers. I used super early <span class="co">[</span><span class="ot">Zotero</span><span class="co">](https://www.zotero.org/)</span> as an undergrad back in 2006--2008, but it didn't fit well with my Markdown-based workflow, so I kind of ignored it. I picked it up again briefly at the beginning of my PhD, but I couldn't get it to play nicely with R Markdown and pandoc, so I kept using trusty old BibDesk. My <span class="in">`references.bib`</span> file got bigger and bigger as I took more and more doctoral classes and did more research, but BibDesk handled the growing library just fine. As of today, I've got 1,400 items in there with nearly 1,000 PDFs, and everything still works great---mostly.</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why switch away from BibTeX and BibDesk?</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>BibDesk got me through my dissertation and all my research projects up until now, so why consider switching away to some other system? Over the past few years, as I've done more reading on my iPad and worked on more coauthored projects, I've run into a few pain points in my citation workflow.</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Problem 1: Cross-device reading</span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>I enjoy reading PDFs on my iPad (particularly in the <span class="co">[</span><span class="ot">iAnnotate app</span><span class="co">](https://www.folia.com/iannotate)</span>), but getting PDFs from BibDesk onto the iPad has always required a bizarre dance:</span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Store <span class="in">`references.bib`</span> and the BibDesk-managed folder of PDFs in Dropbox</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Use the <span class="co">[</span><span class="ot">References</span><span class="co">](https://sites.google.com/site/appsformaths/references)</span> iPad app to open the BibTeX file from Dropbox on the iPad</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Use iAnnotate to navigate Dropbox and find the PDF I want to read</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>Read and annotate the PDF in iAnnotate</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a><span class="ss">5.  </span>Send the finished PDF from iAnnotate back to Dropbox and go back to References to ensure that the annotated PDF updates</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>I'd often get sick of this convoluted process and just find the PDF on my computer and AirDrop it to my iPad directly, completely circumventing Dropbox. I'd then AirDrop it back to my computer and attach the marked up PDF to the reference in BibDesk. It's inconvenient, but less inconvenient than bouncing around a bunch of different apps and hoping everything works.</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a><span class="fu">### Problem 2: Collaboration across many projects with many coauthors {#problem-2-collaboration-across-many-projects-with-many-coauthors}</span></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>Collaboration with a single huge <span class="in">`references.bib`</span> file is impossible. I could share my Dropbox folder with coauthors, but then they'd see all my entries and have access to all my annotated PDFs, which seems like overkill. As I started working with coauthors, I decided to make smaller project-specific <span class="in">`.bib`</span> files that would be shareable and editable.</span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>This is great for project modularity---see how <span class="co">[</span><span class="ot">this `bibliography.bib` file</span><span class="co">](https://github.com/andrewheiss/cautioning-canary/blob/master/manuscript/bibliography.bib)</span> only contains things we cited? But it caused *major* synchronization problems. If me or a coauthor makes any edits to the project-specific files (adding a DOI to an existing entry, adding a new entry, etc.), those changes don't show up in my big master <span class="in">`references.bib`</span> file. I have to remember to copy those changes to the main file, and I never remember. With some recent projects, I've actually been copying some entries from previous projects' <span class="in">`.bib`</span> files rather than from the big <span class="in">`references.bib`</span> file. Everything's diverging and it's a pain.</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a><span class="fu">### Problem 3: BibTeX was designed for LaTeX---but just LaTeX {#problem-3-bibtex-was-designed-for-latexbut-just-latex}</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>BibTeX works great with LaTeX. That's why it was invented in the first place! The fact that things like pandoc work with it is partially a historical accident---<span class="in">`.bib`</span> files were a convenient and widely used plain text bibliography format, so pandoc and MultiMarkdown used BibTeX for citations.</span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>But citations are often more complicated than BibTeX can handle. Consider the LaTeX package <span class="co">[</span><span class="ot">biblatex-chicago</span><span class="co">](https://ctan.org/pkg/biblatex-chicago?lang=en)</span>---in order to be fully compliant with all the intricacies of the Chicago Manual of Style, it has to expand the BibTeX (technically BibLaTeX) format to include fields like <span class="in">`entrysubtype`</span> for distinguishing between magazine/newspaper articles and journal articles, among dozens of other customizations and tweaks. BibTeX has a limited set of entry types, and anything that's not one of those types gets shoehorned into the <span class="in">`misc`</span> type.</span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>Internally, programs like pandoc that can read BibTeX files convert them into a standard <span class="co">[</span><span class="ot">Citation Style Language (CSL)</span><span class="co">](https://en.wikipedia.org/wiki/Citation_Style_Language)</span> format, which it then uses to format references as Chicago, APA, MLA, or whatever. It would be great to store all my citations in a CSL-compliant format in the first place rather than as a LaTeX-only format that has to be constantly converted on-the-fly when converting to any non-LaTeX output.</span>
+<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a><span class="fu">### The solution: Zotero</span></span>
+<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a>Zotero conveniently fixes all these issues:</span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>It has <span class="co">[</span><span class="ot">a synchronization service</span><span class="co">](https://www.zotero.org/support/sync)</span> that works across platforms (including iOS). <span class="co">[</span><span class="ot">It can work with Dropbox too</span><span class="co">](https://ikashnitsky.github.io/2019/zotero/)</span> if you don't want to be bound by their file size limit or pay for extra storage, though I ended up paying for storage to (1) support open source software and (2) not have to deal with multiple programs. I've been doing the BibDesk → iAnnotate → Dropbox → MacBook → AirDrop dance for too many years---I just want Zotero to handle all the syncing for me.</span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>It's **super easy** to collaborate with Zotero. You can create shared group libraries with different sets of coauthors and not worry about Dropbox synchronization issues or accidental deletion of <span class="in">`}`</span> characters in the <span class="in">`.bib`</span> file. For one of my reading-intensive class, <span class="co">[</span><span class="ot">I've even created a shared Zotero group library</span><span class="co">](https://compasp23.classes.andrewheiss.com/class/)</span> that all the students can join and cite from, which is neat.</span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a>    It's also far easier to maintain a master list of references. You can create a <span class="co">[</span><span class="ot">Zotero collection</span><span class="co">](https://www.zotero.org/support/collections_and_tags)</span> for specific projects, and items can live in multiple collections. Editing an item in one collection updates that item in all other collections. Zotero treats collections like iTunes/Apple Music playlists---just like songs can belong to multiple playlists, bibliographic entries can belong to multiple collections.</span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Zotero follows the CSL standard that pandoc uses. It was the first program to adopt CSL (way back in 2006!). It supports all kinds of entry types and fields, beyond what BibTeX supports.</span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a><span class="fu">## Preparing for the migration</span></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>Migrating my big <span class="in">`.references.bib`</span> file to Zotero was a relatively straightforward process, but it required a few minor shenanigans to get everything working right.</span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a><span class="fu">### Make a backup</span></span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>Preparing everything for migration meant I had to make a ton of edits to the original <span class="in">`references.bib`</span> file, so I made a copy of it first and worked with the copy.</span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a><span class="fu">### Install extensions</span></span>
+<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>To make Zotero work nicely with a pandoc-centric writing workflow, and to make file management and tag management easier, I installed these three extensions:</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">Better BibTeX</span><span class="co">](https://retorque.re/zotero-better-bibtex/)</span></span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">ZotFile</span><span class="co">](http://zotfile.com/)</span></span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span><span class="co">[</span><span class="ot">Zotero Tag</span><span class="co">](https://github.com/windingwind/zotero-tag)</span></span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Ratings and read status</span></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>BibDesk allows you to add a couple extra metadata fields to entries for ratings and to mark them as read. I've used these fields for years and find them super useful for keeping track of how much I like articles and for remembering which ones I've actually finished.</span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a>Internally, BibDesk stores this data as entries in the raw BibTex:</span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="in">``` bibtex</span></span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a><span class="in">@article{the_citekey_for_this_entry,</span></span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a><span class="in">    author = {Whoever},</span></span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a><span class="in">    title = {Whatever},</span></span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a><span class="in">    ...</span></span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a><span class="in">    rating = {4},</span></span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a><span class="in">    read = {1}}</span></span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a>I decided to treat these as Zotero tags, which BibDesk calls keywords. I considered making some sort of programmatic solution and writing a script to convert all the <span class="in">`rating`</span> and <span class="in">`read`</span> fields to <span class="in">`keywords`</span>, but that seemed like too much work---many entries have existing keywords and parsing the file and concatenating ratings and read status to the list of keywords would be hard.</span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a>So instead I sorted all my entries in BibDesk by rating, selected all the 5 star ones and added a <span class="in">`zzzzz`</span> tag, selected all the 4 star ones and added a <span class="in">`zzzz`</span> tag, and so on (so that 1 star entries got a <span class="in">`z`</span>) tag. I then sorted the entries by read status and assigned <span class="in">`xxx`</span> to all the ones I've read. These tag names were just temporary---in Zotero I changed these to emojis (⭐️⭐️⭐️ and ✅), but because I was worried about transferring complex Unicode characters like emojis across programs, I decided to simplify things by temporarily just using ASCII characters.</span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a><span class="fu">### Files</span></span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a>I wanted all the PDFs that Zotero would manage to have nice predictable filenames. In BibDesk, I used this pattern. That's been fine, but it uses spaces in the file name and doesn't remove any punctuation or special characters, so it was a little trickier to work with in the terminal or with scripts or for easy consistent searching (especially when searching in the iPad Dropbox app when looking for a PDF to read). But because I set up that pattern in 2008, <span class="co">[</span><span class="ot">path dependency</span><span class="co">](https://en.wikipedia.org/wiki/Path_dependence)</span> kind of locked me in and I've been unwilling to change it since.</span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a>Since I'm starting with a whole new reference manager, I figured it was time to adopt a better PDF naming system. In the ZotFile preferences, I set this pattern:</span>
+<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
+<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a><span class="in">{%a-}{%y-}{%t}</span></span>
+<span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a>...which translates to</span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
+<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a><span class="in">up_to_three_last_names-year-first_few_characters_of_title.pdf</span></span>
+<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a><span class="fu">### Citekeys</span></span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a>In BibDesk, I've had a citation key pattern that I've used for years: <span class="in">`Lastname:Year`</span>, with up to three last names for coauthored things, and an incremental lowercase letter in the case of duplicates:</span>
+<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
+<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a><span class="in">HeissKelley:2017</span></span>
+<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a><span class="in">HeissKelley:2017a</span></span>
+<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a><span class="in">Imbens:2021</span></span>
+<span id="cb6-135"><a href="#cb6-135" aria-hidden="true" tabindex="-1"></a><span class="in">LundbergJohnsonStewart:2021</span></span>
+<span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-137"><a href="#cb6-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a>Zotero and Better BibTeX preserve citekeys when you import a <span class="in">`.bib`</span> file, but I wanted to make sure I keep using this system for new items I add going forward, so I changed the Better BibTeX preferences to use the same pattern:</span>
+<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-140"><a href="#cb6-140" aria-hidden="true" tabindex="-1"></a><span class="in">```         </span></span>
+<span id="cb6-141"><a href="#cb6-141" aria-hidden="true" tabindex="-1"></a><span class="in">auth(0,1) + auth(0,2) + auth(0,3) + ":" + year</span></span>
+<span id="cb6-142"><a href="#cb6-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
