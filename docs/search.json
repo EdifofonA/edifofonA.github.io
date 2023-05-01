@@ -2,9 +2,9 @@
   {
     "objectID": "blog/2022/hurdle-lognormal-gaussian-brms/index.html",
     "href": "blog/2022/hurdle-lognormal-gaussian-brms/index.html",
-    "title": "Modeling outcomes with many zeros using Bayesian hurdle lognormal and Gaussian regression",
+    "title": "Title of blog post",
     "section": "",
-    "text": "Introduction\nIn a research project I’ve been working on for several years now, we’re interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country"
+    "text": "Introduction\nSample text"
   },
   {
     "objectID": "blog/2023/bibdesk-to-zotero-pandoc/index.html",
@@ -25,7 +25,7 @@
     "href": "blog/index.html#section-1",
     "title": "Blog",
     "section": "2022",
-    "text": "2022\n\n\n\n\n  \n\n\n\n\nModeling outcomes with many zeros using Bayesian hurdle lognormal and Gaussian regression\n\n\n\n\n\n\n\nwriting\n\n\nmarkdown\n\n\ncitations\n\n\n\n\nCreate, manipulate, analyze, interpret, and plot Bayesian hurdle regression models in R\n\n\n\n\n\n\nMay 9, 2022\n\n\nEdifofon Akpan\n\n\n\n\n\n\nNo matching items"
+    "text": "2022\n\n\n\n\n  \n\n\n\n\nTitle of blog post\n\n\n\n\n\n\n\nwriting\n\n\nmarkdown\n\n\ncitations\n\n\n\n\nCreate, manipulate, analyze, interpret, and plot Bayesian hurdle regression models in R\n\n\n\n\n\n\nMay 9, 2022\n\n\nEdifofon Akpan\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv/index.html",
