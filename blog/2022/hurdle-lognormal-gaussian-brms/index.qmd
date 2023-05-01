@@ -1,7 +1,7 @@
 ---
 title: "Title of blog post"
 date: 2022-05-09
-description: "Create, manipulate, analyze, interpret, and plot Bayesian hurdle regression models in R"
+description: ""
 image: "plot-body-mass-dist-1.png"
 categories:
   - writing
