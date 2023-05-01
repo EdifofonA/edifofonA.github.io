@@ -1,5 +1,5 @@
 ---
-title: "Modeling outcomes with many zeros using Bayesian hurdle lognormal and Gaussian regression"
+title: "Title of blog post"
 date: 2022-05-09
 description: "Create, manipulate, analyze, interpret, and plot Bayesian hurdle regression models in R"
 image: "plot-body-mass-dist-1.png"
@@ -26,4 +26,4 @@ options(digits = 3, width = 300)
 
 # Introduction
 
-In [a research project I've been working on for several years](https://www.andrewheiss.com/research/articles/chaudhry-heiss-ngos-aid/) now, we're interested in the effect of anti-NGO legal crackdowns on various foreign aid-related outcomes: the amount of foreign aid a country
+Sample text
