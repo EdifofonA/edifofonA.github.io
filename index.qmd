@@ -1,7 +1,7 @@
 ---
 title: "Hello there!"
 pagetitle: "{{< meta website.title >}}"
-description-meta: "{{< meta website.description >}}"
+#description-meta: "{{< meta website.description >}}"
 format:
   html:
     embed-resources: true
