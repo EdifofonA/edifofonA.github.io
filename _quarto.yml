@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: docs
 
+
   preview: 
     port: 5555
     browser: true
@@ -13,10 +14,28 @@ website:
   description: "Edifofon is a research associate at The University of Melbourne Australia and Helpman Institute Abuja Nigeria"
   favicon: "/files/icon.png"
   site-url: "https://www.edifofon.com"
-  repo-url: "https://github.com/EdifofonA/website"
+  repo-url: "https://github.com/EdifofonA"
+  back-to-top-navigation: true
+  
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< var years >}} Edifofon Akpan</span>
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [{{< var orcid >}}](https://orcid.org/{{< var orcid >}})</span>
+    right: |
+      <span class="faux-block">Made using {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+    background: light
+  
+  search: false
+  #   location: navbar
+  #   type: overlay
   
   navbar:
     pinned: true
+    #search: true
+    #background: light
+    #type: light
+    #logo: "files/iconB.png"
 
     left:
       - text: "About"
@@ -33,9 +52,6 @@ website:
       - icon: twitter
         aria-label: twitter
         href: https://twitter.com/EdifofonA
-      - icon: github
-        aria-label: github
-        href: https://github.com/EdifofonA
       - icon: linkedin
         aria-label: linkedin
         href: https://www.linkedin.com/in/edifofon
