@@ -32,7 +32,7 @@ website:
         href: "mailto:hello@edifofon.com"
       - icon: twitter
         aria-label: twitter
-        href: https://twitter.com/edifofon_
+        href: https://twitter.com/EdifofonA
       - icon: github
         aria-label: github
         href: https://github.com/EdifofonA
@@ -45,5 +45,10 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
+    grid:
+      sidebar-width: 250px
+      body-width: 850px
+      margin-width: 250px
+      gutter-width: 1.5rem
 editor: visual
 

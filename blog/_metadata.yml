@@ -4,7 +4,7 @@ date-format: "dddd, MMMM D, YYYY"
 # Add blog-post class to the banner header area
 format: 
   html:
-    code-tools: true
+    code-tools: false
     #embed-resources: true
     #comments:
       #giscus: 
