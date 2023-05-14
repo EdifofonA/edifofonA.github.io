@@ -1,7 +1,6 @@
 ---
 title: "Blog"
 author: ""
-description-meta: "{{< meta website.description >}}"
 listing:
   - id: posts_2023
     contents: "2023/**/index.qmd"
