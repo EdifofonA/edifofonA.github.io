@@ -1,7 +1,7 @@
 ---
 title: "Cost-effectiveness of  iron interventions among young children in Bangladesh"
 date: 2022-05-09
-description: "Iron supplements or MNPs is recommended by the WHO for children.Far from being cost-effective as previously suggested, they are in fact an expensive intervention"
+description: "Iron supplements or MNPs is recommended by the WHO for children. Far from being cost-effective as previously suggested, they are in fact an expensive intervention"
 image: "brisc-ceac.jpeg"
 categories:
   - research
