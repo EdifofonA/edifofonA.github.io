@@ -45,8 +45,5 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
-
-mainfont: "Atkinson hyperlegible"
-sansfont: "Atkinson hyperlegible"
 editor: visual
 
