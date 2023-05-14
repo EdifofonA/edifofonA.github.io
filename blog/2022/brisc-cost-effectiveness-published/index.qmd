@@ -1,0 +1,36 @@
+---
+title: "Cost-effectiveness of  iron interventions among young children in Bangladesh"
+date: 2022-05-09
+description: "Iron supplements or MNPs is recommended by the WHO for children.Far from being cost-effective as previously suggested, they are in fact an expensive intervention"
+image: "brisc-ceac.jpeg"
+categories:
+  - research
+tags:
+  - cost-effectiveness
+  - statistical methods
+format: 
+  html:
+    toc-depth: 2
+fig-cap-location: margin
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center", fig.retina = 3,
+                      fig.width = 6, fig.height = (6 * 0.618),
+                      out.width = "90%", collapse = TRUE)
+options(digits = 3, width = 300)
+```
+
+I am happy to share that my MPH thesis at the University of Melbourne, Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders (MNPs) for anemia among young children in rural Bangladesh, is now published in [The American Journal of Clinical Nutrition (AJCN)](https://doi.org/10.1093/ajcn/nqac225).
+
+Universal provision of iron supplements or MNPs to young children in low and middle-income countries with prevalent anemia is recommended by the World Health Organization (WHO) in their guidelines [here](https://www.who.int/publications/i/item/9789241549523) and [here](https://www.who.int/publications/i/item/9789241549943). Recently, the Benefits and Risks of Iron InterventionS in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh, published in the [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMoa2034187). This study assessed the cost-effectiveness of both iron interventions compared with placebo, alongside the trial.
+
+Part of the rationale for recommending universal iron interventions has been [presumed benefit on cognitive development](https://doi.org/10.1159/000480742). Previous cost-effectiveness studies of MNPs have used averted productivity losses from improved cognition imputed from observational studies or non-empiric estimates as a health outcome. The BRISC trial was the first with long enough follow-up to have the potential to show a substantial difference in cognition -- and did not detect an effect from iron interventions on this outcome, despite finding a significant impact on anemia.
+
+The findings of my study demonstrated that far from being cost-effective as previously suggested, iron interventions are in fact an expensive intervention. We demonstrated that the most widely recommended public health intervention, multiple micronutrient powders, are essentially never cost effective. @fig-brisc-ceac shows that both intervention had 0% probability of cost-effectiveness if we use the likely thresholds (willingness to pay) of \$200 and \$985 for Bangladesh. If we increase this willingness to pay, iron may have value for money but MNPs are essentially not cost-effective.
+
+Under certain conditions and assumptions, iron supplementation may be an intervention that could be considered by policy makers. Our study is the first analysis to demonstrate the value of using high quality empiric data to inform health outcomes in economic analyses of iron interventions.
+
+![Cost-effectiveness acceptability curves showing the probability that iron supplementation or fortification with MNPs is optimal, compared with no intervention](brisc-ceac.jpeg){#fig-brisc-ceac}
+
+Our findings have important implications for policy and funding decisions for nutrition programs across low- and middle-income countries. Iron interventions in children as recommended by WHO are widely implemented around the world. In 2019, 58 countries implemented home fortifications programs with support from UNICEF, with [over 16 million children receiving MNPs](https://www.unicef.org/supply/media/566/file/Multiple-Micronutrient-Power-Market-Note-July-2021.pdf). Considering the high number of children with anemia (two out of every five), the costs of implementing iron interventions at large scale can have a huge budget impact and may displace funds that could be spent more effectively on other interventions.
