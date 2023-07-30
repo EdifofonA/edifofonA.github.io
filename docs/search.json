@@ -88,14 +88,14 @@
     "href": "papers/index.html",
     "title": "Papers",
     "section": "",
-    "text": "My research spans public policy, nonprofit management, political science, and international relations. I study human rights and international nonprofit management and I focus on authoritarian regulation of civil society and international NGO responses to administrative crackdown. I also research causal inference methods, particularly using panel data."
+    "text": "Most of my research has involved costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include mass drug administration for scabies, public health measures for COVID-19, molecular testing for malaria and arboviruses, and pneumococcal conjugate vaccines. I am mailny interested in improving methods in economic evaluation. I am also keen on assessing multicomponent interventions, conducting evaluations using real-world data, and creating user- friendly decision models."
   },
   {
     "objectID": "papers/index.html#journal-articles",
     "href": "papers/index.html#journal-articles",
     "title": "Papers",
     "section": "Journal articles",
-    "text": "Journal articles\n\n\n\n        \n            \n                Suparna Chaudhry and Andrew Heiss, “NGO Repression as a Predictor of Worsening Human Rights Abuses,” Journal of Human Rights 21, no. 2 (2022): 123–140, doi: 10.1080/14754835.2022.2030205\n            \n            \n                    \n                            Human rights\n                        \n                    \n                            INGOs\n                        \n                    \n                            Civil society\n                        \n                    \n                            Bayes\n                        \n                    \n                            NGO regulations\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code and data\n                        \n                    \n                    \n                        \n                             Add to Zotero\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "Journal articles\n\n\n\n        \n            \n                Akpan E, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” Am J of Clin Nutr 2022; 116(5):123–140. doi:10.1093/ajcn/nqac225\n            \n            \n                    \n                            Costing\n                        \n                    \n                            Stata\n                        \n                    \n                            Cost-effectiveness\n                        \n                    \n                            Global health\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint (MPH)\n                        \n                    \n                    \n                        \n                             Final version\n                        \n                    \n                    \n                        \n                             Code notebook\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "papers/index.html#working-papers",
@@ -114,35 +114,35 @@
   {
     "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html",
     "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html",
-    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
     "section": "",
-    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+    "text": "Preprint (masters thesis)\nGitHub repository"
   },
   {
     "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#important-links",
     "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#important-links",
-    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
     "section": "",
-    "text": "Paper (preprint)\nStatistical analysis notebook\nGitHub repository"
+    "text": "Preprint (masters thesis)\nGitHub repository"
   },
   {
     "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#abstract",
     "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#abstract",
-    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
     "section": "Abstract",
-    "text": "Abstract\nAn increasing number of countries have recently cracked down on non-governmental organizations (NGOs). Much of this crackdown is sanctioned by law and represents a bureaucratic form of repression that could indicate more severe human rights abuses in the future. This is especially the case for democracies, which unlike autocracies, may not aggressively attack civic space. We explore if crackdowns on NGOs predict broader human rights repression. Anti-NGO laws are among the most subtle means of repression and attract lesser domestic and international condemnation compared to the use of violence. Using original data on NGO repression, we test whether NGO crackdown is a predictor of political terror, and violations of physical integrity rights and civil liberties. We find that while de jure anti-NGO laws provide little information in predicting future repression, their patterns of implementation—or de facto civil society repression—predicts worsening respect for physical integrity rights and civil liberties."
+    "text": "Abstract\nBackground: Universal provision of iron supplements or iron-containing multiple micronutrient powders (MNPs) is widely used to prevent anemia in young children in low- and middle-income countries. The BRISC (Benefits and Risks of Iron Interventions in Children) trial compared iron supplements and MNPs with placebo in children &lt;2 y old in rural Bangladesh.\nObjectives: We aimed to assess the cost-effectiveness of iron supplements or iron-containing MNPs among young children in rural Bangladesh.\nMethods: We did a cost-effectiveness analysis of MNPs and iron supplements using the BRISC trial outcomes and resource use data, and programmatic data from the literature. Health care costs were assessed from a health system perspective. We calculated incremental cost-effectiveness ratios (ICERs) in terms of US$ per disability-adjusted life-year (DALY) averted. To explore uncertainty, we constructed cost-effectiveness acceptability curves using bootstrapped data over a range of cost-effectiveness thresholds. One- and 2-way sensitivity analyses tested the impact of varying key parameter values on our results.\nResults: Provision of MNPs was estimated to avert 0.0031 (95% CI: 0.0022, 0.0041) DALYs/child, whereas iron supplements averted 0.0039 (95% CI: 0.0030, 0.0048) DALYs/child, over 1 y compared with no intervention. Incremental mean costs were $0.75 (95% CI: 0.73, 0.77) for MNPs compared with no intervention and $0.64 ($0.62, $0.67) for iron supplements compared with no intervention. Iron supplementation dominated MNPs because it was cheaper and averted more DALYs. Iron supplementation had an ICER of $1645 ($1333, $2153) per DALY averted compared with no intervention, and had a 0% probability of being the optimal strategy at cost-effectiveness thresholds of $200 (reflecting health opportunity costs in Bangladesh) and $985 [half of gross domestic product (GDP) per capita] per DALY averted. Scenario and sensitivity analyses supported the base case findings.\nConclusions: These findings do not support universal iron supplementation or micronutrient powders as a cost-effective intervention for young children in rural Bangladesh. This trial was registered at anzctr.org.au as ACTRN1261700066038 and trialsearch.who.int as U1111-1196-1125."
   },
   {
     "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#important-figures",
     "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#important-figures",
-    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
     "section": "Important figures",
-    "text": "Important figures\n\n\n\nFigure 6: Marginal effects of changing levels of civil society repression on the probability of specific levels of political terror and predicted latent human rights values\n\n\n\n\n\nFigure 7: The disconnect between Egypt’s de jure 2002 law and the widespread de facto repression of civil society a decade later"
+    "text": "Important figures\n\n\n\nFigure 1. Cost-effectiveness acceptability curves showing the probability that iron supplementation or fortification with MNPs is optimal, compared with no intervention. For each decision threshold increasing from left to right on the x axis, the fraction of bootstrap iterations with the highest net monetary benefit is plotted on the y axis. The curve shows the probability that no intervention, MNPs, or iron supplements is cost-effective for an amount a decision maker is willing to pay to avert a DALY. Dashed lines indicate 3 such thresholds: $200, $985 (half the GDP per capita of Bangladesh in 2020), and $1970 (GDP per capita of Bangladesh in 2020). DALY, disability-adjusted life-year; GDP, gross domestic product; MNP, multiple micronutrient powder.\n\n\n\n\n\nFigure 2. Two-way sensitivity analysis of impact of changes in active iron agents and program delivery costs on the probability of cost-effectiveness. Contour plots showing the impact of changes in costs of active iron agents (iron syrups or MNPs) and program delivery costs on the probability of cost-effectiveness obtained via P values of NMB regression where NMB = λ × Δdisability-adjusted life-years – ΔCosts. The top rows are for a threshold (λ) of $200 whereas the bottom rows are for a threshold of $985 (half the gross domestic product per capita of Bangladesh in 2020). The left column is for MNPs where the dotted lines mark the base case cost of active iron agent ($1.60 for a 3-mo supply of MNPs). The right column is for iron supplements where the dotted lines mark the base case cost of active iron agent ($0.63 for a 3-mo supply of iron syrups). MNP, multiple micronutrient powder; NMB, net monetary benefit; λ, willingness to pay threshold."
   },
   {
     "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#citation",
     "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#citation",
-    "title": "NGO Repression as a Predictor of Worsening Human Rights Abuses",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
     "section": "Citation",
     "text": "Citation\n\n Add to Zotero \n\n@article{ChaudhryHeiss:2022,\n    Author = {Suparna Chaudhry and Andrew Heiss},\n    Doi = {10.1080/14754835.2022.2030205},\n    Journal = {Journal of Human Rights},\n    Number = {2},\n    Pages = {123--140},\n    Title = {NGO Repression as a Predictor of Worsening Human Rights Abuses},\n    Volume = {21},\n    Year = {2022}}"
   },
@@ -180,5 +180,47 @@
     "title": "Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces",
     "section": "BibTeX citation",
     "text": "BibTeX citation\n@unpublished{ChaudhryHeiss:2021,\n    Author = {Suparna Chaudhry and Andrew Heiss},\n    Note = {Working paper},\n    Title = {Derogations and Democratic Backsliding: Exploring the Pandemic's Effects on Civic Spaces},\n    Year = {2021}}"
+  },
+  {
+    "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#resources",
+    "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#resources",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "",
+    "text": "Preprint (masters thesis)\nGitHub repository"
+  },
+  {
+    "objectID": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#figures",
+    "href": "papers/journal-articles/chaudhry-heiss-ngos-repression/index.html#figures",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "Figures",
+    "text": "Figures\n\n\n\nFigure 1. Cost-effectiveness acceptability curves showing the probability that iron supplementation or fortification with MNPs is optimal, compared with no intervention. For each decision threshold increasing from left to right on the x axis, the fraction of bootstrap iterations with the highest net monetary benefit is plotted on the y axis. The curve shows the probability that no intervention, MNPs, or iron supplements is cost-effective for an amount a decision maker is willing to pay to avert a DALY. Dashed lines indicate 3 such thresholds: $200, $985 (half the GDP per capita of Bangladesh in 2020), and $1970 (GDP per capita of Bangladesh in 2020). DALY, disability-adjusted life-year; GDP, gross domestic product; MNP, multiple micronutrient powder.\n\n\n\n\n\nFigure 2. Two-way sensitivity analysis of impact of changes in active iron agents and program delivery costs on the probability of cost-effectiveness. Contour plots showing the impact of changes in costs of active iron agents (iron syrups or MNPs) and program delivery costs on the probability of cost-effectiveness obtained via P values of NMB regression where NMB = λ × Δdisability-adjusted life-years – ΔCosts. The top rows are for a threshold (λ) of $200 whereas the bottom rows are for a threshold of $985 (half the gross domestic product per capita of Bangladesh in 2020). The left column is for MNPs where the dotted lines mark the base case cost of active iron agent ($1.60 for a 3-mo supply of MNPs). The right column is for iron supplements where the dotted lines mark the base case cost of active iron agent ($0.63 for a 3-mo supply of iron syrups). MNP, multiple micronutrient powder; NMB, net monetary benefit; λ, willingness to pay threshold."
+  },
+  {
+    "objectID": "papers/journal-articles/brisc-cost-effectiveness/index.html",
+    "href": "papers/journal-articles/brisc-cost-effectiveness/index.html",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "",
+    "text": "Preprint (masters thesis)\nGitHub repository"
+  },
+  {
+    "objectID": "papers/journal-articles/brisc-cost-effectiveness/index.html#resources",
+    "href": "papers/journal-articles/brisc-cost-effectiveness/index.html#resources",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "",
+    "text": "Preprint (masters thesis)\nGitHub repository"
+  },
+  {
+    "objectID": "papers/journal-articles/brisc-cost-effectiveness/index.html#abstract",
+    "href": "papers/journal-articles/brisc-cost-effectiveness/index.html#abstract",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "Abstract",
+    "text": "Abstract\nBackground: Universal provision of iron supplements or iron-containing multiple micronutrient powders (MNPs) is widely used to prevent anemia in young children in low- and middle-income countries. The BRISC (Benefits and Risks of Iron Interventions in Children) trial compared iron supplements and MNPs with placebo in children &lt;2 y old in rural Bangladesh.\nObjectives: We aimed to assess the cost-effectiveness of iron supplements or iron-containing MNPs among young children in rural Bangladesh.\nMethods: We did a cost-effectiveness analysis of MNPs and iron supplements using the BRISC trial outcomes and resource use data, and programmatic data from the literature. Health care costs were assessed from a health system perspective. We calculated incremental cost-effectiveness ratios (ICERs) in terms of US$ per disability-adjusted life-year (DALY) averted. To explore uncertainty, we constructed cost-effectiveness acceptability curves using bootstrapped data over a range of cost-effectiveness thresholds. One- and 2-way sensitivity analyses tested the impact of varying key parameter values on our results.\nResults: Provision of MNPs was estimated to avert 0.0031 (95% CI: 0.0022, 0.0041) DALYs/child, whereas iron supplements averted 0.0039 (95% CI: 0.0030, 0.0048) DALYs/child, over 1 y compared with no intervention. Incremental mean costs were $0.75 (95% CI: 0.73, 0.77) for MNPs compared with no intervention and $0.64 ($0.62, $0.67) for iron supplements compared with no intervention. Iron supplementation dominated MNPs because it was cheaper and averted more DALYs. Iron supplementation had an ICER of $1645 ($1333, $2153) per DALY averted compared with no intervention, and had a 0% probability of being the optimal strategy at cost-effectiveness thresholds of $200 (reflecting health opportunity costs in Bangladesh) and $985 [half of gross domestic product (GDP) per capita] per DALY averted. Scenario and sensitivity analyses supported the base case findings.\nConclusions: These findings do not support universal iron supplementation or micronutrient powders as a cost-effective intervention for young children in rural Bangladesh. This trial was registered at anzctr.org.au as ACTRN1261700066038 and trialsearch.who.int as U1111-1196-1125."
+  },
+  {
+    "objectID": "papers/journal-articles/brisc-cost-effectiveness/index.html#figures",
+    "href": "papers/journal-articles/brisc-cost-effectiveness/index.html#figures",
+    "title": "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh",
+    "section": "Figures",
+    "text": "Figures\n\n\n\nFigure 1. Cost-effectiveness acceptability curves showing the probability that iron supplementation or fortification with MNPs is optimal, compared with no intervention. For each decision threshold increasing from left to right on the x axis, the fraction of bootstrap iterations with the highest net monetary benefit is plotted on the y axis. The curve shows the probability that no intervention, MNPs, or iron supplements is cost-effective for an amount a decision maker is willing to pay to avert a DALY. Dashed lines indicate 3 such thresholds: $200, $985 (half the GDP per capita of Bangladesh in 2020), and $1970 (GDP per capita of Bangladesh in 2020). DALY, disability-adjusted life-year; GDP, gross domestic product; MNP, multiple micronutrient powder.\n\n\n\n\n\nFigure 2. Two-way sensitivity analysis of impact of changes in active iron agents and program delivery costs on the probability of cost-effectiveness. Contour plots showing the impact of changes in costs of active iron agents (iron syrups or MNPs) and program delivery costs on the probability of cost-effectiveness obtained via P values of NMB regression where NMB = λ × Δdisability-adjusted life-years – ΔCosts. The top rows are for a threshold (λ) of $200 whereas the bottom rows are for a threshold of $985 (half the gross domestic product per capita of Bangladesh in 2020). The left column is for MNPs where the dotted lines mark the base case cost of active iron agent ($1.60 for a 3-mo supply of MNPs). The right column is for iron supplements where the dotted lines mark the base case cost of active iron agent ($0.63 for a 3-mo supply of iron syrups). MNP, multiple micronutrient powder; NMB, net monetary benefit; λ, willingness to pay threshold."
   }
 ]

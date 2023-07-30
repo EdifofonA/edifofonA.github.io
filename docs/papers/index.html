@@ -80,62 +80,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-title-block-banner-color','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-title-block-banner-color","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-dormant-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-title-block-banner-color','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-title-block-banner-color","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-dormant-papers'] = new List('listing-dormant-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <style>
 
@@ -252,68 +196,58 @@ background: #E6E6E6;
    
   <ul>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
-  <li><a href="#dormant-papers" id="toc-dormant-papers" class="nav-link" data-scroll-target="#dormant-papers">Dormant papers</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Bayes">Bayes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="COVID-19">COVID-19 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Civil society">Civil society <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Egypt">Egypt <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Human rights">Human rights <span class="quarto-category-count">(2)</span></div><div class="category" data-category="INGOs">INGOs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="NGO regulations">NGO regulations <span class="quarto-category-count">(2)</span></div><div class="category" data-category="NGOs">NGOs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Text analysis">Text analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Topic modeling">Topic modeling <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cost-effectiveness">Cost-effectiveness <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Costing">Costing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Global health">Global health <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Stata">Stata <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<p>My research spans public policy, nonprofit management, political science, and international relations. I study human rights and international nonprofit management and I focus on authoritarian regulation of civil society and international NGO responses to administrative crackdown. I also research causal inference methods, particularly using panel data. </p>
+<p>Most of my research has involved costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include mass drug administration for scabies, public health measures for COVID-19, molecular testing for malaria and arboviruses, and pneumococcal conjugate vaccines. I am mailny interested in improving methods in economic evaluation. I am also keen on assessing multicomponent interventions, conducting evaluations using real-world data, and creating user- friendly decision models.</p>
 <section id="journal-articles" class="level2">
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
 <div id="listing-journal-articles" class="quarto-listing quarto-listing-container-custom">
 <div class="papers project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-categories="Human rights,INGOs,Civil society,Bayes,NGO regulations" data-listing-date-sort="1651186800000" data-listing-file-modified-sort="1690729631522" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+        <li class="project" data-index="0" data-categories="Costing,Stata,Cost-effectiveness,Global health" data-listing-date-sort="1664751600000" data-listing-file-modified-sort="1690745441785" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
             <div class="project-content listing-pub-info">
-                <p><a href="http://www.suparnachaudhry.com/">Suparna Chaudhry</a> and <strong>Andrew Heiss</strong>, “NGO Repression as a Predictor of Worsening Human Rights Abuses,” <em>Journal of Human Rights</em> 21, no. 2 (2022): 123–140, doi: <a href="https://doi.org/10.1080/14754835.2022.2030205"><code>10.1080/14754835.2022.2030205</code></a></p>
+                <p><strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>Am J of Clin Nutr</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a></p>
             </div>
             <div class="project-categories">
-                    <div class="project-category"><a href="#category=Human rights">
-                            Human rights
+                    <div class="project-category"><a href="#category=Costing">
+                            Costing
                         </a></div>
-                    <div class="project-category"><a href="#category=INGOs">
-                            INGOs
+                    <div class="project-category"><a href="#category=Stata">
+                            Stata
                         </a></div>
-                    <div class="project-category"><a href="#category=Civil society">
-                            Civil society
+                    <div class="project-category"><a href="#category=Cost-effectiveness">
+                            Cost-effectiveness
                         </a></div>
-                    <div class="project-category"><a href="#category=Bayes">
-                            Bayes
-                        </a></div>
-                    <div class="project-category"><a href="#category=NGO regulations">
-                            NGO regulations
+                    <div class="project-category"><a href="#category=Global health">
+                            Global health
                         </a></div>
             </div>
             <div class="project-details-listing">
                 <ul class="project-links">
                     <li class="project-link details">
-                        <a href="../papers/journal-articles/chaudhry-heiss-ngos-repression/index.html" class="listing-name">
+                        <a href="../papers/journal-articles/brisc-cost-effectiveness/index.html" class="listing-name">
                             <i class="fa-solid fa-circle-info"></i> Full details »
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="../chaudhry-heiss-ngos-repression.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        <a href="../mph-thesis.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint (MPH)
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="https://doi.org/10.1080/14754835.2022.2030205">
+                        <a href="https://doi.org/10.1093/ajcn/nqac225">
                             <i class="fa-solid fa-scroll"></i> Final version
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="https://github.com/andrewheiss/cautioning-canary">
-                            <i class="fa-brands fa-github"></i> Code and data
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="https://www.zotero.org/save?type=doi&amp;q=10.1080/14754835.2022.2030205">
-                            <i class="ai ai-zotero"></i> Add to Zotero
+                        <a href="https://github.com/edifofonA">
+                            <i class="fa-brands fa-github"></i> Code notebook
                         </a>
                     </li>
                 </ul>
@@ -325,106 +259,12 @@ background: #E6E6E6;
 No matching items
 </div>
 </div>
-</section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="papers project-list">
-<ul class="list">
-        <li class="project" data-index="0" data-categories="Human rights,Civil society,NGO regulations,COVID-19" data-listing-date-sort="1616713200000" data-listing-file-modified-sort="1690728357660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-            <div class="project-content listing-pub-info">
-                <p><a href="http://www.suparnachaudhry.com/">Suparna Chaudhry</a> and <strong>Andrew Heiss</strong>, “Derogations and Democratic Backsliding: Exploring the Pandemic’s Effects on Civic Spaces”</p>
-            </div>
-            <div class="project-categories">
-                    <div class="project-category"><a href="#category=Human rights">
-                            Human rights
-                        </a></div>
-                    <div class="project-category"><a href="#category=Civil society">
-                            Civil society
-                        </a></div>
-                    <div class="project-category"><a href="#category=NGO regulations">
-                            NGO regulations
-                        </a></div>
-                    <div class="project-category"><a href="#category=COVID-19">
-                            COVID-19
-                        </a></div>
-            </div>
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../papers/working-papers/chaudhry-heiss-derogations/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="../chaudhry-heiss-derogations.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="https://github.com/andrewheiss/covid-derogations">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="dormant-papers" class="level2">
-<h2 class="anchored" data-anchor-id="dormant-papers">Dormant papers</h2>
-<div id="listing-dormant-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="papers project-list">
-<ul class="list">
-        <li class="project" data-index="0" data-categories="Egypt,Text analysis,Topic modeling,NGOs" data-listing-date-sort="1408489200000" data-listing-file-modified-sort="1690655008179" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="project-content listing-pub-info">
-                <p>"Sources of Advocacy: When Does the Media Give Voice to Egyptian Advocacy NGOs?" (with Ken Rogerson, Duke University)</p>
-            </div>
-            <div class="project-categories">
-                    <div class="project-category"><a href="#category=Egypt">
-                            Egypt
-                        </a></div>
-                    <div class="project-category"><a href="#category=Text analysis">
-                            Text analysis
-                        </a></div>
-                    <div class="project-category"><a href="#category=Topic modeling">
-                            Topic modeling
-                        </a></div>
-                    <div class="project-category"><a href="#category=NGOs">
-                            NGOs
-                        </a></div>
-            </div>
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../papers/dormant-papers/heiss-rogerson-sources/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="../2014-heiss-rogerson-sources.pdf">
-                            <i class="fa-solid fa-file-pdf"></i> PDF
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="https://github.com/andrewheiss/Egyptian-NGO-sources-in-media">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<!-- ## Working papers -->
+<!-- ::: {#working-papers} -->
+<!-- ::: -->
+<!-- ## Dormant papers -->
+<!-- ::: {#dormant-papers} -->
+<!-- ::: -->
 
 
 

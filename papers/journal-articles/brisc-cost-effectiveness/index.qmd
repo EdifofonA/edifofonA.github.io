@@ -1,0 +1,62 @@
+---
+title: "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh"
+date: 2022-10-03
+author:
+  - name: Edifofon Akpan
+    url: http://www.edifofon.com/
+    orcid: 0000-0003-3506-7590
+    affiliation: Melbourne School of Population and Global Health
+  - name: Natalie Carvalho
+    url: https://findanexpert.unimelb.edu.au/profile/531653-natalie-carvalho
+    orcid: 0000-0002-5599-2209
+    affiliation: Melbourne School of Population and Global Health
+categories:
+  - Costing
+  - Stata
+  - Cost-effectiveness
+  - Global health
+pub-info:
+  reference: >-
+    <strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>Am J of Clin Nutr</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a>
+  links:
+  - name: Preprint (MPH)
+    url: mph-thesis.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.1093/ajcn/nqac225
+    icon: fa-solid fa-scroll
+  - name: Code notebook
+    url: https://github.com/edifofonA
+    icon: fa-brands fa-github
+  # - name: Add to Zotero
+  #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
+  #   icon: ai ai-zotero
+  extra: >-
+    My master's thesis
+
+doi: 10.1080/14754835.2022.2030205
+---
+
+## Resources
+
+-   [Preprint (masters thesis)](mph-thesis.pdf)
+-   [GitHub repository](https://github.com/edifofonA)
+
+## Abstract
+
+**Background:** Universal provision of iron supplements or iron-containing multiple micronutrient powders (MNPs) is widely used to prevent anemia in young children in low- and middle-income countries. The BRISC (Benefits and Risks of Iron Interventions in Children) trial compared iron supplements and MNPs with placebo in children \<2 y old in rural Bangladesh.
+
+**Objectives:** We aimed to assess the cost-effectiveness of iron supplements or iron-containing MNPs among young children in rural Bangladesh.
+
+**Methods:** We did a cost-effectiveness analysis of MNPs and iron supplements using the BRISC trial outcomes and resource use data, and programmatic data from the literature. Health care costs were assessed from a health system perspective. We calculated incremental cost-effectiveness ratios (ICERs) in terms of US\$ per disability-adjusted life-year (DALY) averted. To explore uncertainty, we constructed cost-effectiveness acceptability curves using bootstrapped data over a range of cost-effectiveness thresholds. One- and 2-way sensitivity analyses tested the impact of varying key parameter values on our results.
+
+**Results:** Provision of MNPs was estimated to avert 0.0031 (95% CI: 0.0022, 0.0041) DALYs/child, whereas iron supplements averted 0.0039 (95% CI: 0.0030, 0.0048) DALYs/child, over 1 y compared with no intervention. Incremental mean costs were \$0.75 (95% CI: 0.73, 0.77) for MNPs compared with no intervention and \$0.64 (\$0.62, \$0.67) for iron supplements compared with no intervention. Iron supplementation dominated MNPs because it was cheaper and averted more DALYs. Iron supplementation had an ICER of \$1645 (\$1333, \$2153) per DALY averted compared with no intervention, and had a 0% probability of being the optimal strategy at cost-effectiveness thresholds of \$200 (reflecting health opportunity costs in Bangladesh) and \$985 \[half of gross domestic product (GDP) per capita\] per DALY averted. Scenario and sensitivity analyses supported the base case findings.
+
+**Conclusions:** These findings do not support universal iron supplementation or micronutrient powders as a cost-effective intervention for young children in rural Bangladesh. This trial was registered at anzctr.org.au as ACTRN1261700066038 and trialsearch.who.int as U1111-1196-1125.
+
+## Figures
+
+![Figure 1. Cost-effectiveness acceptability curves showing the probability that iron supplementation or fortification with MNPs is optimal, compared with no intervention. For each decision threshold increasing from left to right on the x axis, the fraction of bootstrap iterations with the highest net monetary benefit is plotted on the y axis. The curve shows the probability that no intervention, MNPs, or iron supplements is cost-effective for an amount a decision maker is willing to pay to avert a DALY. Dashed lines indicate 3 such thresholds: \$200, \$985 (half the GDP per capita of Bangladesh in 2020), and \$1970 (GDP per capita of Bangladesh in 2020). DALY, disability-adjusted life-year; GDP, gross domestic product; MNP, multiple micronutrient powder.](ceac-plot.png)
+
+![Figure 2. Two-way sensitivity analysis of impact of changes in active iron agents and program delivery costs on the probability of cost-effectiveness. Contour plots showing the impact of changes in costs of active iron agents (iron syrups or MNPs) and program delivery costs on the probability of cost-effectiveness obtained via P values of NMB regression where NMB = λ × Δdisability-adjusted life-years -- ΔCosts. The top rows are for a threshold (λ) of \$200 whereas the bottom rows are for a threshold of \$985 (half the gross domestic product per capita of Bangladesh in 2020). The left column is for MNPs where the dotted lines mark the base case cost of active iron agent (\$1.60 for a 3-mo supply of MNPs). The right column is for iron supplements where the dotted lines mark the base case cost of active iron agent (\$0.63 for a 3-mo supply of iron syrups). MNP, multiple micronutrient powder; NMB, net monetary benefit; λ, willingness to pay threshold.](twsa-plot.png)
