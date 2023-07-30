@@ -1,7 +1,7 @@
 ---
 title: "Cost-effectiveness of  iron interventions among young children in Bangladesh"
 date: 2022-05-09
-description: "Iron supplements or MNPs is recommended by the WHO for children. Far from being cost-effective as previously suggested, they are in fact an expensive intervention"
+description: ""
 image: "brisc-ceac.jpeg"
 categories:
   - research
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(fig.align = "center", fig.retina = 3,
 options(digits = 3, width = 300)
 ```
 
-I am happy to share that my MPH thesis at the University of Melbourne, Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders (MNPs) for anemia among young children in rural Bangladesh, is now published in [The American Journal of Clinical Nutrition (AJCN)](https://doi.org/10.1093/ajcn/nqac225).
+I am happy to share that my MPH thesis at the *University of Melbourne*, Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders (MNPs) for anemia among young children in rural Bangladesh, is now published in [*The American Journal of Clinical Nutrition (AJCN)*](https://doi.org/10.1093/ajcn/nqac225).
 
 Universal provision of iron supplements or MNPs to young children in low and middle-income countries with prevalent anemia is recommended by the World Health Organization (WHO) in their guidelines [here](https://www.who.int/publications/i/item/9789241549523) and [here](https://www.who.int/publications/i/item/9789241549943). Recently, the Benefits and Risks of Iron InterventionS in Children (BRISC) trial compared iron supplements and MNPs with placebo in children under 2 years in rural Bangladesh, published in the [New England Journal of Medicine](https://www.nejm.org/doi/full/10.1056/NEJMoa2034187). This study assessed the cost-effectiveness of both iron interventions compared with placebo, alongside the trial.
 
