@@ -6,6 +6,7 @@ published-title: Most recent CV
 engine: knitr 
 cv:
   pdf: "edifofon-cv-may-2023.pdf"
+page-layout: full
 ---
 
 ```{css echo=FALSE}

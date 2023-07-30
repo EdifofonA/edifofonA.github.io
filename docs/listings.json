@@ -5,5 +5,13 @@
       "/blog/2023/bibdesk-to-zotero-pandoc/index.html",
       "/blog/2022/brisc-cost-effectiveness-published/index.html"
     ]
+  },
+  {
+    "listing": "/papers/index.html",
+    "items": [
+      "/papers/journal-articles/chaudhry-heiss-ngos-repression/index.html",
+      "/papers/working-papers/chaudhry-heiss-derogations/index.html",
+      "/papers/dormant-papers/heiss-rogerson-sources/index.html"
+    ]
   }
 ]

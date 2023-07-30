@@ -11,7 +11,7 @@ format:
 
 ::: grid
 ::: {.g-col-12 .g-col-sm-4}
-![](files/profile-pic.jpg)
+![](files/profile-pic-bw.jpg)
 :::
 
 ::: {.g-col-12 .g-col-sm-8}

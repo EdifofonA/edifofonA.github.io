@@ -1,0 +1,24 @@
+# Date format
+date-format: "MMMM YYYY"
+
+# Enable banner style title blocks
+title-block-banner: "#E6E6E6"
+title-block-banner-color: "#262835"
+
+# Default for table of contents
+toc: true
+toc-title: Contents
+toc-location: left
+
+# Default knitr options
+execute:
+  echo: false
+  message: false
+  warning: false
+
+include-back-link: true
+
+format:
+  html:
+    template-partials:
+      - ../html/papers/title-block.html

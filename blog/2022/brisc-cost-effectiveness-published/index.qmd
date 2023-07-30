@@ -1,7 +1,7 @@
 ---
 title: "Cost-effectiveness of  iron interventions among young children in Bangladesh"
 date: 2022-05-09
-description: ""
+description: "Iron supplements and micronutrient powders are recommended by WHO for anaemia. Far from cost-effective as previously suggested, they are very expensive"
 image: "brisc-ceac.jpeg"
 categories:
   - research

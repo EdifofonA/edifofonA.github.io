@@ -1,0 +1,37 @@
+---
+title: "Papers"
+listing:
+  - id: journal-articles
+    contents: "journal-articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/papers/listing.ejs
+    categories: true
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/papers/listing.ejs
+  - id: dormant-papers
+    contents: "dormant-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/papers/listing.ejs
+page-layout: full
+include-back-link: false
+toc-location: right
+---
+
+My research spans public policy, nonprofit management, political science, and international relations. I study human rights and international nonprofit management and I focus on authoritarian regulation of civil society and international NGO responses to administrative crackdown. I also research causal inference methods, particularly using panel data. {{< ai blank-just-to-add-ai-dependency-to-this-page >}}
+
+## Journal articles
+
+::: {#journal-articles}
+:::
+
+## Working papers
+
+::: {#working-papers}
+:::
+
+## Dormant papers
+
+::: {#dormant-papers}
+:::

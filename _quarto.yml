@@ -1,16 +1,16 @@
 project:
   type: website
   output-dir: docs
-
-
   preview: 
     port: 5555
     browser: true
     watch-inputs: true
     navigate: true
 
+# title-block-banner: "#3C3E49"
+
 website:
-  title: "Edifofon Akpan"
+  title: "Edifofon"
   description: "Edifofon is a research associate at The University of Melbourne Australia and Helpman Institute Abuja Nigeria"
   favicon: "/files/icon.png"
   site-url: "https://www.edifofon.com"
@@ -32,10 +32,10 @@ website:
   
   navbar:
     pinned: true
-    #search: true
-    #background: light
-    #type: light
-    #logo: "files/iconB.png"
+    search: true
+    background: light
+    type: light
+    logo: "files/icon.png"
 
     left:
       - text: "About"
