@@ -14,11 +14,17 @@ categories:
   - Global health
 pub-info:
   reference: >-
-    <strong>Akpan E</strong>, Li Jun Thean, Rabindra Baskota, Jyotishna Mani, Maria Mow3, Aalisha Sahukhan, Mike Kama, Meciusela Tuicakau, Joseph Kado, Lucia Romani, Daniel Engelman, Margot Whitfeld, John Kaldor, Andrew Steer, and Natalie Carvalho. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>Journal</em> 2022; ##(#):##–##. doi:<a href="https://doi.org/10.########"><code>10.########</code></a>
+    <strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, Kama M, Tuicakau M, Kado J, Romani L, Engelman D, Whitfeld M, Kaldor J, Steer A, and Carvalho N. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>Journal</em> 2022; ##(#):##–##. doi:<a href="https://doi.org/10.########"><code>10.########</code></a>
   links:
   - name: Code notebook
     url: https://github.com/EdifofonA/bigshift-scabiesSSTI-costs
     icon: fa-brands fa-github
+  # - name: Final version
+  #   url: https://doi.org/10.1093/ajcn/nqac225
+  #   icon: fa-solid fa-scroll
+  # - name: Code notebook
+  #   url: https://github.com/EdifofonA/brisc-cost-effectiveness
+  #   icon: fa-brands fa-github
   # - name: Add to Zotero
   #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
   #   icon: ai ai-zotero
