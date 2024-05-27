@@ -1,0 +1,64 @@
+---
+title: "Cost-effective boosting allocations in the post-Omicron era of COVID-19 management"
+date: 2024-01-03
+author:
+  - name: Thao P. Le
+    orcid: 
+    affiliation: University of Melbourne School of Mathematics and Statistics
+  - name: Eamon Conway
+    orcid: 
+    affiliation: University of Melbourne Centre for Data Science
+  - name: Edifofon Akpan
+    orcid: 0000-0003-3506-7590
+    affiliation: University of Melbourne School of Population and Global Health
+  - name: Yingying Wang
+    orcid: 
+    affiliation: University of Melbourne School of Population and Global Health
+  - name: Natalie Carvalho
+    orcid: 0000-0002-5599-2209
+    affiliation: Melbourne School of Population and Global Health
+  - name: Jodie McVernon
+    orcid: 
+    affiliation: Melbourne School of Population and Global Health
+categories:
+  - R
+  - Cost-effectiveness
+  - Global health
+pub-info:
+  reference: >-
+    Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, Campbell PT, Cromer D, Lydeamore MJ, McDonough Y, Mueller I, Ryan G, Walker C, Wang Y, Carvalho N, McVernon J. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a>
+  links:
+  - name: Preprint (MPH thesis)
+    url: le-2024-preprint.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  - name: Final version
+    url: https://doi.org/10.1101/2023.11.14.23298536
+    icon: fa-solid fa-scroll
+  - name: Code notebook
+    url: https://github.com/spectrum-spark/covid-CEA
+    icon: fa-brands fa-github
+  # - name: Add to Zotero
+  #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
+  #   icon: ai ai-zotero
+  extra: >-
+    This study evaluated impact of future COVID-19 booster doses in high-income settings with older populations.
+
+doi: 10.1101/2023.11.14.23298536
+---
+
+## Abstract
+
+**Background:** Following widespread exposure to Omicron variants, COVID-19 has transitioned to endemic circulation. Populations now have diverse infection and vaccination histories, resulting in heterogeneous immune landscapes. Careful consideration of vaccination is required through the post-Omicron phase of COVID-19 management to minimise disease burden. We assess the impact and cost-effectiveness of targeted COVID-19 vaccination strategies to support global vaccination recommendations.
+
+**Methods:** We integrated immunological, transmission, clinical and cost-effectiveness models, and simulated populations with different characteristics and immune landscapes. We calculated the expected number of infections, hospitalisations and deaths for different vaccine scenarios. Costs (from a healthcare perspective) were estimated for exemplar country income level groupings in the Western Pacific Region. Results are reported as incremental costs and disability-adjusted life years averted compared to no additional vaccination. Parameter and stochastic uncertainty were captured through scenario and sensitivity analysis.
+
+**Findings:** Across different population demographics and income levels, we consistently found that annual elder-targeted boosting strategies are most likely to be cost-effective or cost-saving, while paediatric programs are unlikely to be cost-effective. Results remained consistent while accounting for uncertainties in the epidemiological and economic models. Half-yearly boosting may only be cost-effective in higher income settings with older population demographics and higher cost-effectiveness thresholds.
+
+**Interpretation:** The seresults demonstrate the value of continued booster vaccinations to protect against severe COVID-19 disease outcomes across high and middle-income settings and show that the biggest health gains relative to vaccine costs are achieved by targeting older age-groups.
+
+## Figures
+
+![Figure 3: Cost-effectiveness results for different vaccination strategies in high transmission high vaccination coverage settings, for older (Group A) and younger (Group B) demographics with early (1.50 year) and late (2.50 year) seeding of an immune evading variant. Top figures represent cost-effectiveness planes for (a) older population and (b) younger population. Bottom figures show cost-effectiveness acceptability curves considering stochastic uncertainty and economic parameter uncertainty for the most cost-effective high-risk strategies for (c) older population and (d) younger population. The boosting strategies considered here are: pediatric boosting (ages 5-15), high-risk boosting (65+ in the older population, 55+ in the younger population) and random boosting at 2 years. High risk boosting is the most cost-effective strategy and dominates pediatric and random boosting strategies.](le-2024-figure3.png)
+
+![Figure E5: One-way sensitivity analysis for high-risk boosting at 2·0 years in an older population with high vaccination coverage. Here, immune escape occurs at 1·5 years in the high transmission potential scenario](le-2024-figureE5.png)

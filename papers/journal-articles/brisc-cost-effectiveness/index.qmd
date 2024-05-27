@@ -3,15 +3,12 @@ title: "Cost-effectiveness of universal iron supplementation and iron-containing
 date: 2022-10-03
 author:
   - name: Edifofon Akpan
-    url: http://www.edifofon.com/
     orcid: 0000-0003-3506-7590
     affiliation: Melbourne School of Population and Global Health
   - name: Natalie Carvalho
-    url: https://findanexpert.unimelb.edu.au/profile/531653-natalie-carvalho
     orcid: 0000-0002-5599-2209
     affiliation: Melbourne School of Population and Global Health
 categories:
-  - Costing
   - Stata
   - Cost-effectiveness
   - Global health
@@ -27,7 +24,7 @@ pub-info:
     url: https://doi.org/10.1093/ajcn/nqac225
     icon: fa-solid fa-scroll
   - name: Code notebook
-    url: https://github.com/edifofonA
+    url: https://github.com/EdifofonA/brisc-cost-effectiveness
     icon: fa-brands fa-github
   # - name: Add to Zotero
   #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
