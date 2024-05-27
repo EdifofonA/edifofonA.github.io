@@ -19,7 +19,7 @@ pub-info:
   reference: >-
     <strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>Am J of Clin Nutr</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a>
   links:
-  - name: Preprint (MPH)
+  - name: Preprint (MPH thesis)
     url: mph-thesis.pdf
     local: true
     icon: fa-solid fa-file-pdf
@@ -37,11 +37,6 @@ pub-info:
 
 doi: 10.1080/14754835.2022.2030205
 ---
-
-## Resources
-
--   [Preprint (masters thesis)](mph-thesis.pdf)
--   [GitHub repository](https://github.com/edifofonA)
 
 ## Abstract
 
