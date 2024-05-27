@@ -26,11 +26,6 @@ pub-info:
 doi: pending
 ---
 
-## Resources
-
--   [Preprint (masters thesis)](mph-thesis.pdf)
--   [GitHub repository](https://github.com/edifofonA)
-
 ## Abstract
 
 **Background:** Scabies and related bacterial skin and soft tissue infections (SSTIs) are highly prevalent in many tropical, low- and middle-income settings. These skin conditions contribute to higher healthcare costs and burdens on healthcare systems. The Big Skin Health Intervention Fiji Trial (“Big SHIFT”) carried out surveillance for scabies and related SSTIs from July 2018 to June 2019 in the Northern Division of Fiji, an area with high prevalence of scabies, prior to a division-wide ivermectin-based mass drug administration campaign. .
@@ -43,4 +38,4 @@ doi: pending
 
 ## Figures
 
-![Figure 1. One-way sensitivity analysis on the impact of changing the base case parameter values to low and high values on the total annual healthcare costs (in 2020 US\$) of scabies and related SSTIs in Fiji.](tornado-total-costs.png)
+![Figure 1. One-way sensitivity analysis on the impact of changing the base case parameter values to low and high values on the total annual healthcare costs (in 2020 US\$) of scabies and related SSTIs in Fiji. Total annual cost is indicated by the black reference line (\$2.95 million). See Table 1 for the ranges used for this sensitivity analysis. ICU, intensive care unit; PHC, primary healthcare; SSTI, skin and soft tissue infection.](tornado-total-costs.png)
