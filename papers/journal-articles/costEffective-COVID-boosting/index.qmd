@@ -28,13 +28,10 @@ pub-info:
   reference: >-
     Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, Campbell PT, Cromer D, Lydeamore MJ, McDonough Y, Mueller I, Ryan G, Walker C, Wang Y, Carvalho N, McVernon J. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a>
   links:
-  - name: Preprint (MPH thesis)
+  - name: Preprint
     url: le-2024-preprint.pdf
     local: true
     icon: fa-solid fa-file-pdf
-  - name: Final version
-    url: https://doi.org/10.1101/2023.11.14.23298536
-    icon: fa-solid fa-scroll
   - name: Code notebook
     url: https://github.com/spectrum-spark/covid-CEA
     icon: fa-brands fa-github
