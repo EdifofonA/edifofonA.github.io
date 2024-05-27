@@ -15,14 +15,17 @@ format:
 :::
 
 ::: {.g-col-12 .g-col-sm-8}
-Welcome to my personal website.
+Welcome to my website.
 
-I am a Research Assistant/Fellow in the [Health Economics Unit](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-policy/research-group/health-economics) at the Centre for Health Policy, Melbourne School of Population and Global Health. I also serve as strategy advisor with [Helpman Development Institute](https://www.helpmaninstitute.org/), Abuja, Nigeria. In 2021, I completed a Master's in Public Health University of Melbourne, Australia, with specialization in Health Economics. <!--# This September, I will be joining University of Sheffield Four-year Wellcome PhD studentships in Public Health Economics and Decision Science. -->
+Most of the content here will relate to my professional life, but you might sometimes see faith-based materials. I can't help it! Compared to the high privilege of receiving grace from Jesus Christ, receiving the love of God and having the Spirit of God, everything here is insignificant.
 
-My previous work focused on health expenditure studies, healthcare utilization surveys, and other analysis to inform public financing of health in Nigeria. I have recently provided support for health economic analyses and training in Malaysia, Papua New Guinea, and Bangladesh.
+I also serve as strategy advisor with [Helpman Development Institute](https://www.helpmaninstitute.org/), Abuja, Nigeria. In 2021, I completed a Master's in Public Health University of Melbourne, Australia, with specialization in Health Economics. <!--# This September, I will be joining University of Sheffield Four-year Wellcome PhD studentships in Public Health Economics and Decision Science. -->
 
-My current interests include applying methods in cost-effectiveness analysis using individual-level data, healthcare decision modelling, and economic evaluation using infectious disease models to inform decision making on health interventions in developing countries.
+I have studied and/or lived in Nigeria, Australia, and the UK. My first degree was a BPharm at University of Uyo, Nigeria, in 2014. Thereafter, I did a Master’s in public health (MPH) degree at University of Melbourne in 2021 through an Australia Awards scholarship. My thesis was a cost-effectiveness analysis, using [Stata](https://www.stata.com/), alongside a trial of iron interventions for anaemia among young children in Bangladesh. Currently, I am in the second year of Wellcome PhD studentships in Public Health Economics and Decision Science at The University of Sheffield. 
 
-I teach introductory classes on use of [R](https://www.r-project.org/) and [the tidyverse](https://www.tidyverse.org/).
+Most of the work I have done have hovered around public health, health systems, economic evaluation, and health decision science. Before starting my MPH, I did some studies that inform health financing policies in Nigeria. More recently, I have been involved in costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include mass drug administration for scabies, public health measures for COVID-19, molecular testing for malaria and arboviruses, and pneumococcal conjugate vaccines. Most of these were done with colleagues at [Health Economics Unit](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-policy/research-group/health-economics) at Melbourne School of Population and Global Health. 
+
+I am particularly keen on projects that assess multi-component interventions, use evaluations using real-world data, and those that involve creating user-friendly decision models. Most of my time in the next few years will be spent on analysis of cancer data or modelling cancer screening interventions using [R](https://www.r-project.org/). If you navigate to [Papers](http://edifofon.com/papers/) section of this website, you will see data and code from projects where I did a substantial part of the primary analysis.
+
 :::
 :::

@@ -1,0 +1,15 @@
+{
+  "hash": "f5da06f05a9c4900e4dbb83e8f9051db",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Title of blog post\"\ndate: 2023-01-08\ndescription: \"Sample description\"\nimage: \"zotero-final.png\"\ntwitter-card: \n    image: \"zotero-final.png\"\nopen-graph: \n    image: \"zotero-final.png\"\ncategories:\n  - writing\n  - markdown\n  - citations\n---\n\n\n\n\n## Introduction\n\nSample text.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
