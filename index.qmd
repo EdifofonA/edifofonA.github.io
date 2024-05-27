@@ -1,5 +1,5 @@
 ---
-title: "Hello!"
+title: "Welcome to my website!"
 pagetitle: "{{< meta website.title >}}"
 #description-meta: "{{< meta website.description >}}"
 format:
@@ -10,20 +10,17 @@ format:
 ---
 
 ::: grid
-::: {.g-col-12 .g-col-sm-4}
+::: {.g-col-12 .g-col-sm-3}
 ![](files/profile-pic-bw.jpg)
 :::
 
-::: {.g-col-12 .g-col-sm-8}
-Welcome to my website.
+::: {.g-col-12 .g-col-sm-9}
 
 Most of the content here will relate to my professional life, but you might sometimes see faith-based materials. I can't help it! Compared to the high privilege of receiving grace from Jesus Christ, receiving the love of God and having the Spirit of God, everything here is insignificant.
 
-I also serve as strategy advisor with [Helpman Development Institute](https://www.helpmaninstitute.org/), Abuja, Nigeria. In 2021, I completed a Master's in Public Health University of Melbourne, Australia, with specialization in Health Economics. <!--# This September, I will be joining University of Sheffield Four-year Wellcome PhD studentships in Public Health Economics and Decision Science. -->
+I have studied and/or lived in Nigeria, Australia, and the UK. My first degree was a BPharm at University of Uyo in 2014. Thereafter, I did an MPH degree at University of Melbourne in 2021 through an Australia Awards scholarship. My thesis was a [cost-effectiveness analysis](http://edifofon.com/blog/2022/brisc-cost-effectiveness-published/), using Stata, alongside a trial of iron interventions for anaemia among Bangladeshi children. Currently, I doing [Wellcome PhD](https://pheds-dtc.ac.uk/cohort-eight/) in Public Health Economics and Decision Science at The University of Sheffield. 
 
-I have studied and/or lived in Nigeria, Australia, and the UK. My first degree was a BPharm at University of Uyo, Nigeria, in 2014. Thereafter, I did a Master’s in public health (MPH) degree at University of Melbourne in 2021 through an Australia Awards scholarship. My thesis was a cost-effectiveness analysis, using [Stata](https://www.stata.com/), alongside a trial of iron interventions for anaemia among young children in Bangladesh. Currently, I am in the second year of Wellcome PhD studentships in Public Health Economics and Decision Science at The University of Sheffield. 
-
-Most of the work I have done have hovered around public health, health systems, economic evaluation, and health decision science. Before starting my MPH, I did some studies that inform health financing policies in Nigeria. More recently, I have been involved in costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include mass drug administration for scabies, public health measures for COVID-19, molecular testing for malaria and arboviruses, and pneumococcal conjugate vaccines. Most of these were done with colleagues at [Health Economics Unit](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-policy/research-group/health-economics) at Melbourne School of Population and Global Health. 
+My work to date has been in public health, economic evaluation, and health decision science. Pre-MPH, I did some studies that inform health financing policies in Nigeria. More recently, I have done costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include [scabies in Fiji](http://edifofon.com/papers/journal-articles/bigshift-scabiesSSTI-costs/); [COVID policy](https://jamanetwork.com/journals/jama-health-forum/article-abstract/2782622) in Australia, COVID public health measures in Malaysia, [COVID vaccine boosters](https://www.medrxiv.org/content/10.1101/2023.11.14.23298536v1) in Pacific countries, molecular testing for malaria and arboviruses in Papua New Guinea, and pneumococcal conjugate vaccines in developing countries. Most of these were done with colleagues at [MSPGH Health Economics Unit](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-policy/research-group/health-economics). 
 
 I am particularly keen on projects that assess multi-component interventions, use evaluations using real-world data, and those that involve creating user-friendly decision models. Most of my time in the next few years will be spent on analysis of cancer data or modelling cancer screening interventions using [R](https://www.r-project.org/). If you navigate to [Papers](http://edifofon.com/papers/) section of this website, you will see data and code from projects where I did a substantial part of the primary analysis.
 
