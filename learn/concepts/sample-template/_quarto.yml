@@ -1,0 +1,11 @@
+project:
+  type: manuscript
+
+format:
+  html:
+    toc: true
+    comments:
+      hypothesis: true
+
+
+

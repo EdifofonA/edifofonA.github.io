@@ -2,16 +2,29 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/2023/bibdesk-to-zotero-pandoc/index.html",
       "/blog/2022/brisc-cost-effectiveness-published/index.html"
     ]
   },
   {
-    "listing": "/papers/index.html",
+    "listing": "/worship/index.html",
     "items": [
-      "/papers/journal-articles/bigshift-scabiesSSTI-costs/index.html",
-      "/papers/journal-articles/costEffective-COVID-boosting/index.html",
-      "/papers/journal-articles/brisc-cost-effectiveness/index.html"
+      "/worship/sample-worship-template.html"
+    ]
+  },
+  {
+    "listing": "/learn/index.html",
+    "items": [
+      "/learn/concepts/sample-template/index.html",
+      "/learn/methods/sample-template/index.html",
+      "/learn/software/sample-template/index.html"
+    ]
+  },
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/journal-articles/costEffective-COVID-boosting/index.html",
+      "/research/journal-articles/brisc-cost-effectiveness/index.html",
+      "/research/working-papers/bigshift-scabiesSSTI-costs/index.html"
     ]
   }
 ]

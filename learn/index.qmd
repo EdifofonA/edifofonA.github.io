@@ -1,0 +1,37 @@
+---
+title: "Learn"
+author: ""
+listing:
+  - id: concepts
+    contents: "concepts/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: methods
+    contents: "methods/**/index.qmd"
+    sort: "date desc"
+    categories: true
+  - id: software
+    contents: "software/**/index.qmd"
+    sort: "date desc"
+page-layout: full
+toc-title: Year
+toc-location: right
+date-format: "MMMM D, YYYY"
+code-tools: false
+comments: false
+---
+
+## Concepts
+
+::: {#concepts}
+:::
+
+## Methods
+
+::: {#methods}
+:::
+
+## Software
+
+::: {#software}
+:::

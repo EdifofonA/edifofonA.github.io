@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.edifofon.com/blog/2022/hurdle-lognormal-gaussian-brms/index.html</loc>
-    <lastmod>2023-05-05T01:21:58.348Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/blog/2023/bibdesk-to-zotero-pandoc/index.html</loc>
-    <lastmod>2024-05-27T11:24:50.040Z</lastmod>
+    <loc>https://www.edifofon.com/index.html</loc>
+    <lastmod>2024-05-29T12:52:04.000Z</lastmod>
   </url>
   <url>
     <loc>https://www.edifofon.com/blog/index.html</loc>
-    <lastmod>2024-05-27T11:24:50.046Z</lastmod>
+    <lastmod>2024-05-31T17:53:00.560Z</lastmod>
   </url>
   <url>
-    <loc>https://www.edifofon.com/cv/index.html</loc>
-    <lastmod>2023-07-30T18:50:23.556Z</lastmod>
+    <loc>https://www.edifofon.com/worship/index.html</loc>
+    <lastmod>2024-05-31T17:32:39.513Z</lastmod>
   </url>
   <url>
-    <loc>https://www.edifofon.com/index.html</loc>
-    <lastmod>2024-05-29T12:52:04.135Z</lastmod>
+    <loc>https://www.edifofon.com/learn/concepts/sample-template/index.html</loc>
+    <lastmod>2024-05-31T17:39:21.084Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/learn/index.html</loc>
+    <lastmod>2024-05-31T17:05:13.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/research/working-papers/bigshift-scabiesSSTI-costs/index.html</loc>
+    <lastmod>2024-05-27T18:27:18.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/research/journal-articles/costEffective-COVID-boosting/index.html</loc>
+    <lastmod>2024-05-27T18:24:19.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/research/journal-articles/brisc-cost-effectiveness/index.html</loc>
+    <lastmod>2024-05-27T17:57:53.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/research/index.html</loc>
+    <lastmod>2024-05-31T16:50:14.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/learn/methods/sample-template/index.html</loc>
+    <lastmod>2024-05-31T17:39:21.084Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/learn/software/sample-template/index.html</loc>
+    <lastmod>2024-05-31T17:39:21.084Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edifofon.com/worship/sample-worship-template.html</loc>
+    <lastmod>2024-05-31T17:35:03.699Z</lastmod>
   </url>
   <url>
     <loc>https://www.edifofon.com/blog/2022/brisc-cost-effectiveness-published/index.html</loc>
-    <lastmod>2024-05-27T11:24:50.040Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/dormant-papers/heiss-rogerson-sources/index.html</loc>
-    <lastmod>2023-07-30T15:05:10.482Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/index.html</loc>
-    <lastmod>2024-05-27T11:24:50.106Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/journal-articles/chaudhry-heiss-ngos-repression/index.html</loc>
-    <lastmod>2023-07-30T19:22:38.235Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/working-papers/chaudhry-heiss-derogations/index.html</loc>
-    <lastmod>2023-07-30T15:05:19.795Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/journal-articles/brisc-cost-effectiveness/index.html</loc>
-    <lastmod>2024-05-27T17:57:53.162Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/blog/2024/bigshift-scabiesSSTI-costs/index.html</loc>
-    <lastmod>2024-05-27T11:24:50.040Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/journal-articles/bigshift-scabiesSSTI-costs/index.html</loc>
-    <lastmod>2024-05-27T18:27:18.670Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.edifofon.com/papers/journal-articles/costEffective-COVID-boosting/index.html</loc>
-    <lastmod>2024-05-27T18:24:19.123Z</lastmod>
+    <lastmod>2024-05-27T11:24:50.000Z</lastmod>
   </url>
 </urlset>

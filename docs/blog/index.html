@@ -58,34 +58,6 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-posts_2023 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-posts_2023'] = new List('listing-posts_2023', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-posts_2022 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -93,9 +65,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -183,20 +155,20 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../cv/index.html"> 
-<span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../papers/index.html"> 
-<span class="menu-text">Papers</span></a>
+    <a class="nav-link" href="../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../learn/index.html"> 
+<span class="menu-text">Learn</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../worship/index.html"> 
+<span class="menu-text">Worship</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -225,13 +197,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Blog</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta column-page">
 
       
     
@@ -242,77 +214,26 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Year</h2>
-   
-  <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2023</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="citations">citations <span class="quarto-category-count">(1)</span></div><div class="category" data-category="markdown">markdown <span class="quarto-category-count">(1)</span></div><div class="category" data-category="research">research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="writing">writing <span class="quarto-category-count">(1)</span></div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2023</h2>
-<div id="listing-posts_2023" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="writing,markdown,citations" data-listing-date-sort="1673136000000" data-listing-file-modified-sort="1716809090040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
-<div class="thumbnail">
-<p><a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external"></a></p><a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external">
-<p><img src="../blog/2023/bibdesk-to-zotero-pandoc/zotero-final.png" class="thumbnail-image"></p>
-</a><p><a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external">Title of blog post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('writing'); return false;">
-writing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('markdown'); return false;">
-markdown
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('citations'); return false;">
-citations
-</div>
-</div>
-<div class="listing-description">
-<a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external">Sample description</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../blog/2023/bibdesk-to-zotero-pandoc/index.html" class="no-external">
-<div class="listing-date">
-January 8, 2023
-</div>
-<div class="listing-author">
-Edifofon Akpan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2022</h2>
+<!-- ## 2024 -->
+<!-- ::: {#posts_2024} -->
+<!-- ::: -->
+<!-- ## 2023 -->
+<!-- ::: {#posts_2023} -->
+<!-- ::: -->
+<!-- ## 2022 -->
 <div id="listing-posts_2022" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="research" data-listing-date-sort="1652050800000" data-listing-file-modified-sort="1716809090040" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<div class="quarto-post image-right" data-index="0" data-categories="research" data-listing-date-sort="1652050800000" data-listing-file-modified-sort="1716809090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
 <div class="thumbnail">
 <p><a href="../blog/2022/brisc-cost-effectiveness-published/index.html" class="no-external"></a></p><a href="../blog/2022/brisc-cost-effectiveness-published/index.html" class="no-external">
 <p><img src="../blog/2022/brisc-cost-effectiveness-published/brisc-ceac.jpeg" class="thumbnail-image"></p>
@@ -324,11 +245,6 @@ No matching items
 </h3>
 <div class="listing-subtitle">
 <a href="../blog/2022/brisc-cost-effectiveness-published/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('research'); return false;">
-research
-</div>
 </div>
 <div class="listing-description">
 <a href="../blog/2022/brisc-cost-effectiveness-published/index.html" class="no-external">Iron supplements and micronutrient powders are recommended by WHO for anaemia. Far from cost-effective as previously suggested, they are very expensive</a>
@@ -353,7 +269,6 @@ No matching items
 
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -747,7 +662,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2019–2023 Edifofon Akpan</span></p>
+<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2019–2024 Edifofon Akpan</span></p>
 </div>   
     <div class="nav-footer-center">
 <p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-6646-206X">0000-0002-6646-206X</a></span></p>
