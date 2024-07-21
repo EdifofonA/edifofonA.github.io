@@ -1,1 +1,1 @@
-Sitemap: https://www.edifofon.com/sitemap.xml
+Sitemap: https://edifofon.com/sitemap.xml

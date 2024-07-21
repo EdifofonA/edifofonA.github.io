@@ -14,17 +14,14 @@ categories:
   - Global health
 pub-info:
   reference: >-
-    <strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, Kama M, Tuicakau M, Kado J, Romani L, Engelman D, Whitfeld M, Kaldor J, Steer A, and Carvalho N. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>Journal</em> 2022; ##(#):##–##. doi:<a href="https://doi.org/10.########"><code>10.########</code></a>
+    <strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, Kama M, Tuicakau M, Kado J, Romani L, Engelman D, Whitfeld M, Kaldor J, Steer A, and Carvalho N. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>PLOS Global Public Health</em> 2024; ##(#):##–##. doi:<a href="https://doi.org/10.########"><code>10.########</code></a>
   links:
   - name: Code notebook
-    url: https://github.com/EdifofonA/bigshift-scabiesSSTI-costs
+    url: https://github.com/EdifofonA/ScabiesSSTI-Costs-Fiji
     icon: fa-brands fa-github
   # - name: Final version
   #   url: https://doi.org/10.1093/ajcn/nqac225
   #   icon: fa-solid fa-scroll
-  # - name: Code notebook
-  #   url: https://github.com/EdifofonA/brisc-cost-effectiveness
-  #   icon: fa-brands fa-github
   # - name: Add to Zotero
   #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
   #   icon: ai ai-zotero
@@ -44,4 +41,6 @@ doi: pending
 
 ## Figures
 
-![Figure 1. One-way sensitivity analysis on the impact of changing the base case parameter values to low and high values on the total annual healthcare costs (in 2020 US\$) of scabies and related SSTIs in Fiji. Total annual cost is indicated by the black reference line (\$2.95 million). See Table 1 for the ranges used for this sensitivity analysis. ICU, intensive care unit; PHC, primary healthcare; SSTI, skin and soft tissue infection.](tornado-total-costs.png)
+![Figure 1. Extrapolation of the total annual number of scabies and scabies-related SSTI cases from BigSHIFT trial in Northern Division to all divisions in Fiji based upon previous scabies and impetigo prevalence data.](BigSHIFT-Extrapolation-Process.png)
+
+![Figure 2. One-way sensitivity analysis on the impact of changing the base case parameter values to low and high values on the total annual healthcare costs (in 2020 US\$) of scabies and related SSTIs in Fiji. Total annual cost is indicated by the black reference line (\$2.95 million). See Table 1 for the ranges used for this sensitivity analysis. ICU, intensive care unit; PHC, primary healthcare; SSTI, skin and soft tissue infection.](tornado-total-costs.png)
