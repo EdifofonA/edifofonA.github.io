@@ -16,7 +16,7 @@ format:
 :::
 
 ::: {.g-col-12 .g-col-sm-9}
-I have studied and/or lived in Nigeria, Australia, and the UK. My first degree was a BPharm at University of Uyo in 2014. Thereafter, I did an MPH degree at University of Melbourne in 2021 through an Australia Awards scholarship. My thesis was a [cost-effectiveness analysis](http://edifofon.com/blog/2022/brisc-cost-effectiveness-published/) of iron interventions for anaemia among Bangladeshi children. 
+I have studied and/or lived in Nigeria, Australia, and the UK. My first degree was a BPharm at University of Uyo in 2014. Thereafter, I did an MPH degree at University of Melbourne in 2021 through an Australia Awards scholarship. My thesis was a [cost-effectiveness analysis](http://edifofon.com/blog/2022/brisc-cost-effectiveness-published/) of iron interventions for anaemia among Bangladeshi children.
 
 My work to date has been in public health, economic evaluation, and health decision science. Some of these include work on [scabies in Fiji](http://edifofon.com/papers/journal-articles/bigshift-scabiesSSTI-costs/); [COVID policy](https://jamanetwork.com/journals/jama-health-forum/article-abstract/2782622) in Australia, COVID public health measures in Malaysia, [COVID vaccine boosters](https://www.medrxiv.org/content/10.1101/2023.11.14.23298536v1) in Pacific countries, molecular testing for malaria and arboviruses in Papua New Guinea, and pneumococcal conjugate vaccines in developing countries.
 

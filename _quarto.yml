@@ -44,17 +44,17 @@ website:
         href: "blog/index.qmd"
       - text: "Research"
         href: "research/index.qmd"
-      - text: "Learn"
-        href: "learn/index.qmd"
-      - text: "Worship"
-        href: "worship/index.qmd"        
+      # - text: "Learn"
+      #   href: "learn/index.qmd"
+      # - text: "Worship"
+      #   href: "worship/index.qmd"        
     right:
       - icon: envelope
         aria-label: email
-        href: "mailto:hello@edifofon.com"
-      - icon: twitter
-        aria-label: twitter
-        href: https://twitter.com/EdifofonA
+        href: "mailto:edifofonakpan@gmail.com"
+      # - icon: twitter
+      #   aria-label: twitter
+      #   href: https://twitter.com/EdifofonA
       - icon: linkedin
         aria-label: linkedin
         href: https://www.linkedin.com/in/edifofon
