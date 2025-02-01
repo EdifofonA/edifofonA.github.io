@@ -1,32 +1,32 @@
 ---
 title: "Cost-effective boosting allocations in the post-Omicron era of COVID-19 management"
 date: 2024-01-03
-author:
-  - name: Thao P. Le
-    orcid: 
-    affiliation: University of Melbourne School of Mathematics and Statistics
-  - name: Eamon Conway
-    orcid: 
-    affiliation: University of Melbourne Centre for Data Science
-  - name: Edifofon Akpan
-    orcid: 0000-0003-3506-7590
-    affiliation: University of Melbourne School of Population and Global Health
-  - name: Yingying Wang
-    orcid: 
-    affiliation: University of Melbourne School of Population and Global Health
-  - name: Natalie Carvalho
-    orcid: 0000-0002-5599-2209
-    affiliation: Melbourne School of Population and Global Health
-  - name: Jodie McVernon
-    orcid: 
-    affiliation: Melbourne School of Population and Global Health
+# author:
+#   - name: Thao P. Le
+#     orcid: 
+#     affiliation: University of Melbourne
+#   - name: Eamon Conway
+#     orcid: 
+#     affiliation: University of Melbourne
+#   - name: Edifofon Akpan
+#     orcid: 0000-0003-3506-7590
+#     affiliation: University of Melbourne
+#   - name: Yingying Wang
+#     orcid: 
+#     affiliation: University of Melbourne
+#   - name: Natalie Carvalho
+#     orcid: 0000-0002-5599-2209
+#     affiliation: University of Melbourne
+#   - name: Jodie McVernon
+#     orcid: 
+#     affiliation: University of Melbourne
 categories:
   - R
   - Cost-effectiveness
   - Global health
 pub-info:
   reference: >-
-    Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, Campbell PT, Cromer D, Lydeamore MJ, McDonough Y, Mueller I, Ryan G, Walker C, Wang Y, Carvalho N, McVernon J. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a>
+    Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, et al. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv.</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a>
   links:
   - name: Preprint
     url: le-2024-preprint.pdf

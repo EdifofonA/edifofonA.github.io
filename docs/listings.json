@@ -22,9 +22,10 @@
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/journal-articles/costeffective-covid-malaysia/index.html",
+      "/research/journal-articles/ScabiesSSTI-Costs-Fiji/index.html",
       "/research/journal-articles/costEffective-COVID-boosting/index.html",
-      "/research/journal-articles/brisc-cost-effectiveness/index.html",
-      "/research/working-papers/ScabiesSSTI-Costs-Fiji/index.html"
+      "/research/journal-articles/brisc-cost-effectiveness/index.html"
     ]
   }
 ]

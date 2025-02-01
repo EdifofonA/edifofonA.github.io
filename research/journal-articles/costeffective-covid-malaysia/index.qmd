@@ -1,0 +1,61 @@
+---
+title: "Epidemiologic and economic modelling of COVID-19 public health interventions in Malaysia during 2021 and 2022"
+date: 2024-12-12
+# author:
+#   - name: Thao P. Le
+#     orcid: 
+#     affiliation: University of Melbourne School of Mathematics and Statistics
+#   - name: Eamon Conway
+#     orcid: 
+#     affiliation: University of Melbourne Centre for Data Science
+#   - name: Edifofon Akpan
+#     orcid: 0000-0003-3506-7590
+#     affiliation: University of Melbourne School of Population and Global Health
+#   - name: Yingying Wang
+#     orcid: 
+#     affiliation: University of Melbourne School of Population and Global Health
+#   - name: Natalie Carvalho
+#     orcid: 0000-0002-5599-2209
+#     affiliation: Melbourne School of Population and Global Health
+#   - name: Jodie McVernon
+#     orcid: 
+#     affiliation: Melbourne School of Population and Global Health
+categories:
+  - R
+  - Cost-effectiveness
+  - Global health
+pub-info:
+  reference: >-
+    Carvalho N, Jayasundara P, Abd Rahim KNK, <strong>Akpan E</strong>, Devine A, Hughes A, et al. “Epidemiologic and economic modelling of COVID-19 public health interventions in Malaysia during 2021 and 2022.” <em>Melbourne Health Economics</em> 2024. doi:<a href="https://doi.org/10.26188/28015307.v1"><code>10.26188/28015307.v1</code></a>
+  links:
+  - name: Preprint
+    url: le-2024-preprint.pdf
+    local: true
+    icon: fa-solid fa-file-pdf
+  # - name: Code notebook
+  #   url: https://github.com/spectrum-spark/covid-CEA
+  #   icon: fa-brands fa-github
+  # - name: Add to Zotero
+  #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
+  #   icon: ai ai-zotero
+  extra: >-
+    This modeling study assessed the relative contributions of COVID-19 vaccination and mobility restrictions to illness, mortality, and healthcare resource utilization in Malaysia.
+
+doi: 10.26188/28015307.v1
+---
+
+## Abstract
+
+**Background:** We evaluated the estimated impact and cost-effectiveness of two COVID-19 public health interventions implemented in Malaysia during 2021 and 2022: COVID-19 vaccination and varying degrees of nationwide movement control orders (MCOs).
+
+**Methods:** We used a compartmental epidemiological model to simulate the impact of the public health interventions from 1 April 2021 to 30 September 2022. We compared the implemented strategy (baseline) against counterfactual scenarios of no vaccination; vaccination coverage reduced by 50%; no full MCO (intense mobility restrictions); no recovery phase of the MCO (less intensive mobility restrictions); and combinations of these scenarios. A linked economic model was used to estimate costs (in 2021 United States dollars) from a health system perspective and disability-adjusted life years (DALYs) of each scenario, compared to the baseline strategy. Future costs and outcomes were discounted at 3%. One-way and probabilistic sensitivity analyses were conducted to evaluate the robustness of the results.
+
+**Findings:** Malaysia’s COVID-19 vaccination program with full and recovery MCOs (baseline scenario) reduced cases, prevented hospitalisations, and averted deaths when compared with all simulated counterfactual scenarios. The baseline scenario was dominant, saving between \$23 and \$569 million while averting 21,000 to 357,000 DALYs. Probabilistic sensitivity analysis indicated that at any threshold up to \$11,000 (Malaysia gross domestic product per capita), the baseline scenario was certainly cost-effective. Findings were robust to varying key parameters, using undiscounted health outcomes, and adopting a limited societal perspective.
+
+**Interpretation:** TThe public health strategies implemented in Malaysia to control the major epidemic waves in 2021 and 2022 were associated with major improvements in epidemiological indicators (reduced cases, hospitalisations and deaths) and lower health systems costs. The effects of vaccination appeared particularly important to mitigating the epidemics, although restrictions on mobility may have had synergistic effects.
+
+## Figures
+
+![Figure 3: The simulated scenarios of no vaccination (scenario 1), removal of both nation-wide and state-wide MCOs (scenario 5) and scenario of no vaccination and no MCOs being implemented (scenario 6).The simulated notifications (top left), cumulative deaths (top right), ICU occupancy (bottom left) and hospital occupancy (bottom right) are shown. Only the median fits are shown for better visualisations](carvalho-2024-figure3.png)
+
+![Figure 4: Cost-effectiveness plane showing joint distribution of incremental costs and DALYs averted from probabilistic sensitivity analysis for the baseline scenario compared to other scenarios from one thousand simulations. Each open-coloured circle in the scatter plot represents one simulation conducted in the probabilistic sensitivity analysis. Incremental costs are from a public health system perspective. Because these simulations lie in the southeast quadrant of the plane, the baseline scenario is more effective and less costly than any of the counterfactual scenarios without intervention, implying it is cost-effective regardless of the cost-effectiveness thresholds. DALYs, disability-adjusted life-years; RM, Malaysian ringgits.](carvalho-2024-figure4.png)

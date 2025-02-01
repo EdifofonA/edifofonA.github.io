@@ -64,9 +64,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-title-block-banner-color','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-title-block-banner-color','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-title-block-banner-color","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-title-block-banner-color","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -92,9 +92,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-_quarto-vars','listing-language','listing-date-format','listing-title-block-banner','listing-title-block-banner-color','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-_quarto-vars","listing-language","listing-date-format","listing-title-block-banner","listing-title-block-banner-color","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: [],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -256,7 +256,7 @@ window.Quarto = {
   <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Cost-effectiveness">Cost-effectiveness <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Costing">Costing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Global health">Global health <span class="quarto-category-count">(3)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Stata">Stata <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Cost-effectiveness">Cost-effectiveness <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Costing">Costing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Global health">Global health <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Stata">Stata <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -270,9 +270,113 @@ window.Quarto = {
 <div class="papers project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="R,Cost-effectiveness,Global health" data-listing-date-sort="1704240000000" data-listing-file-modified-sort="1716834259000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+        <li class="project" data-index="0" data-categories="R,Cost-effectiveness,Global health" data-listing-date-sort="1733961600000" data-listing-file-modified-sort="1738374647587" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="439">
             <div class="project-content listing-pub-info">
-                <p>Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, Campbell PT, Cromer D, Lydeamore MJ, McDonough Y, Mueller I, Ryan G, Walker C, Wang Y, Carvalho N, McVernon J. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a></p>
+                <p>Carvalho N, Jayasundara P, Abd Rahim KNK, <strong>Akpan E</strong>, Devine A, Hughes A, et al. “Epidemiologic and economic modelling of COVID-19 public health interventions in Malaysia during 2021 and 2022.” <em>Melbourne Health Economics</em> 2024. doi:<a href="https://doi.org/10.26188/28015307.v1"><code>10.26188/28015307.v1</code></a></p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=R">
+                            R
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Cost-effectiveness">
+                            Cost-effectiveness
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Global health">
+                            Global health
+                        </a></div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/journal-articles/costeffective-covid-malaysia/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/journal-articles/costeffective-covid-malaysia/le-2024-preprint.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-categories="Costing,R,Global health" data-listing-date-sort="1728514800000" data-listing-file-modified-sort="1738374926709" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="352">
+            <div class="project-content listing-pub-info">
+                <p><strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, et al. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>PLOS Global Public Health.</em> 2024; 4(10):e0003706. doi:<a href="https://doi.org/10.1371/journal.pgph.0003706"><code>10.1371/journal.pgph.0003706</code></a></p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Costing">
+                            Costing
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=R">
+                            R
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Global health">
+                            Global health
+                        </a></div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/journal-articles/ScabiesSSTI-Costs-Fiji/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://github.com/EdifofonA/ScabiesSSTI-Costs-Fiji">
+                        
+                            <i class="fa-brands fa-github"></i> Code notebook
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.1371/journal.pgph.0003706">
+                        
+                            <i class=""></i> Final version
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="2" data-categories="R,Cost-effectiveness,Global health" data-listing-date-sort="1704240000000" data-listing-file-modified-sort="1738375060256" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+            <div class="project-content listing-pub-info">
+                <p>Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, et al. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv.</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a></p>
             </div>
 
             
@@ -326,9 +430,9 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Stata,Cost-effectiveness,Global health" data-listing-date-sort="1664751600000" data-listing-file-modified-sort="1716832673000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
+        <li class="project" data-index="3" data-categories="Stata,Cost-effectiveness,Global health" data-listing-date-sort="1664751600000" data-listing-file-modified-sort="1738374914727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="590">
             <div class="project-content listing-pub-info">
-                <p><strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>Am J of Clin Nutr</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a></p>
+                <p><strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, et al. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>American Journal of Clinical Nutrition.</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a></p>
             </div>
 
             
@@ -403,54 +507,6 @@ No matching items
 <div class="papers project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Costing,R,Global health" data-listing-date-sort="1716764400000" data-listing-file-modified-sort="1721575149334" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
-            <div class="project-content listing-pub-info">
-                <p><strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, Kama M, Tuicakau M, Kado J, Romani L, Engelman D, Whitfeld M, Kaldor J, Steer A, and Carvalho N. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>PLOS Global Public Health</em> 2024; ##(#):##–##. doi:<a href="https://doi.org/10.########"><code>10.########</code></a></p>
-            </div>
-
-            
-            <div class="project-categories">
-                
-                    <div class="project-category"><a href="#category=Costing">
-                            Costing
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=R">
-                            R
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Global health">
-                            Global health
-                        </a></div>
-                    
-            </div>
-            
-
-            
-            
-            
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/working-papers/ScabiesSSTI-Costs-Fiji/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    
-                        
-                    <li class="project-link">
-                        
-                        <a href="https://github.com/EdifofonA/ScabiesSSTI-Costs-Fiji">
-                        
-                            <i class="fa-brands fa-github"></i> Code notebook
-                        </a>
-                    </li>
-                        
-                    
-                </ul>
-            </div>
-        </li>
-        
 </ul>
 </div>
 <div class="listing-no-matching d-none">

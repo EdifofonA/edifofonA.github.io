@@ -10,10 +10,7 @@ listing:
     contents: "working-papers/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
-  # - id: dormant-papers
-  #   contents: "dormant-papers/*/index.qmd"
-  #   sort: "date desc"
-  #   template: ../html/research/listing.ejs
+
 page-layout: full
 include-back-link: false
 toc-location: right

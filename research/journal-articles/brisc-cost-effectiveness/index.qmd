@@ -1,20 +1,20 @@
 ---
 title: "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh"
 date: 2022-10-03
-author:
-  - name: Edifofon Akpan
-    orcid: 0000-0003-3506-7590
-    affiliation: Melbourne School of Population and Global Health
-  - name: Natalie Carvalho
-    orcid: 0000-0002-5599-2209
-    affiliation: Melbourne School of Population and Global Health
+# author:
+#   - name: Edifofon Akpan
+#     orcid: 0000-0003-3506-7590
+#     affiliation: Melbourne School of Population and Global Health
+#   - name: Natalie Carvalho
+#     orcid: 0000-0002-5599-2209
+#     affiliation: Melbourne School of Population and Global Health
 categories:
   - Stata
   - Cost-effectiveness
   - Global health
 pub-info:
   reference: >-
-    <strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, Bhuiyan MSA, Hamadani JD, Biggs BA, Pasricha S-R, Carvalho N. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>Am J of Clin Nutr</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a>
+    <strong>Akpan E</strong>, Hossain SJ, Devine A, Braat S, Hasan MI, Tipu SMMU, et al. “Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh.” <em>American Journal of Clinical Nutrition.</em> 2022; 116(5):123–140. doi:<a href="https://doi.org/10.1093/ajcn/nqac225"><code>10.1093/ajcn/nqac225</code></a>
   links:
   - name: Preprint (MPH thesis)
     url: mph-thesis.pdf
