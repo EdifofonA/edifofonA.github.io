@@ -1,9 +1,9 @@
 ---
 title: "Faith"
 author: ""
-listing:
-    sort: "date desc"
-    categories: true
+# listing:
+#     sort: "date desc"
+#     categories: true
 page-layout: full
 toc-title: Year
 toc-location: right
