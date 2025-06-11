@@ -1,18 +1,22 @@
 ---
-title: "Learn"
+title: "Learning"
 author: ""
 listing:
-  - id: concepts
-    contents: "concepts/**/index.qmd"
+  - id: learning
+#    contents: "**/index.qmd"
     sort: "date desc"
     categories: true
-  - id: methods
-    contents: "methods/**/index.qmd"
-    sort: "date desc"
-    categories: true
-  - id: software
-    contents: "software/**/index.qmd"
-    sort: "date desc"
+  # - id: learning
+  #   contents: "concepts/**/index.qmd"
+  #   sort: "date desc"
+  #   categories: true
+    # - id: methods
+  #   contents: "methods/**/index.qmd"
+  #   sort: "date desc"
+  #   categories: true
+  # - id: software
+  #   contents: "software/**/index.qmd"
+  #   sort: "date desc"
 page-layout: full
 toc-title: Year
 toc-location: right
@@ -21,17 +25,17 @@ code-tools: false
 comments: false
 ---
 
-## Concepts
+<!-- ## Concepts -->
 
-::: {#concepts}
-:::
+<!-- ::: {#concepts} -->
+<!-- ::: -->
 
-## Methods
+<!-- ## Methods -->
 
-::: {#methods}
-:::
+<!-- ::: {#methods} -->
+<!-- ::: -->
 
-## Software
+<!-- ## Software -->
 
-::: {#software}
-:::
+<!-- ::: {#software} -->
+<!-- ::: -->

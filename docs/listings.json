@@ -30,11 +30,7 @@
   },
   {
     "listing": "/learning/index.html",
-    "items": [
-      "/learning/concepts/sample-template/index.html",
-      "/learning/methods/sample-template/index.html",
-      "/learning/software/sample-template/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/reflections/index.html",
@@ -45,8 +41,6 @@
   },
   {
     "listing": "/faith/index.html",
-    "items": [
-      "/faith/sample-worship-template.html"
-    ]
+    "items": []
   }
 ]

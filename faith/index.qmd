@@ -1,5 +1,5 @@
 ---
-title: "Worship"
+title: "Faith"
 author: ""
 listing:
     sort: "date desc"
