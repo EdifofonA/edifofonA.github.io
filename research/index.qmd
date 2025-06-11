@@ -1,15 +1,16 @@
 ---
 title: "Research"
 listing:
-  - id: journal-articles
-    contents: "journal-articles/*/index.qmd"
+  - id: publications
+    # contents: "publications/*/index.qmd"
+    contents: "*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: true
-  - id: working-papers
-    contents: "working-papers/*/index.qmd"
-    sort: "date desc"
-    template: ../html/research/listing.ejs
+  # - id: preprints
+  #   contents: "preprints/*/index.qmd"
+  #   sort: "date desc"
+  #   template: ../html/research/listing.ejs
 
 page-layout: full
 include-back-link: false
@@ -18,18 +19,18 @@ toc-location: right
 
 Most of my research has involved costing or cost-effectiveness analyses to inform interventions for infectious diseases in the Asia-Pacific region. Some of these include mass drug administration for scabies, public health measures for COVID-19, molecular testing for malaria and arboviruses, and pneumococcal conjugate vaccines. I am mailny interested in improving methods in economic evaluation. I am also keen on assessing multicomponent interventions, conducting evaluations using real-world data, and creating user- friendly decision models.
 
-## Journal articles
+<!-- ## Publications -->
 
-::: {#journal-articles}
+::: {#publications}
 :::
 
-## Working papers
+<!-- ## Preprints -->
 
-::: {#working-papers}
-:::
+<!-- ::: {#preprints} -->
+<!-- ::: -->
 
-<!-- ## Dormant papers -->
+<!-- ## Reports -->
 
-<!-- ::: {#dormant-papers} -->
+<!-- ::: {#reports} -->
 
 <!-- ::: -->

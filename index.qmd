@@ -12,7 +12,7 @@ format:
 
 ::::: grid
 ::: {.g-col-12 .g-col-sm-3}
-![](files/profile-pic-col.png)
+![](assets/profile-pic-col.png)
 :::
 
 ::: {.g-col-12 .g-col-sm-9}

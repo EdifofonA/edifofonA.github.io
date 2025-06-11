@@ -1,1 +1,59 @@
 /* css styles */
+/* Regular Font (Medium) */
+@font-face {
+    font-family: "StoneSansStd";
+    src: url("assets/fonts/StoneSansStd-Medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Italic Font (Medium Italic) */
+@font-face {
+    font-family: "StoneSansStd";
+    src: url("assets/fonts/StoneSansStd-MediumItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Bold Font (Semibold) */
+@font-face {
+    font-family: "StoneSansStd";
+    src: url("assets/fonts/StoneSansStd-Semibold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Bold Italic Font (Semibold Italic) */
+@font-face {
+    font-family: "StoneSansStd";
+    src: url("assets/fonts/StoneSansStd-SemiboldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Apply the fonts to the body */
+a, div, body {
+    font-family: "StoneSansStd", sans-serif;
+}
+
+/* Additional font styling for headings, if needed */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "StoneSansStd", sans-serif;
+}
+
+/* Apply specific font weights/styles where needed */
+strong {
+    font-weight: bold; /* Uses StoneSansStd-Semibold */
+}
+
+em {
+    font-style: italic; /* Uses StoneSansStd-MediumItalic */
+}
+
+b {
+    font-weight: bold; /* Uses StoneSansStd-Semibold */
+}
+
+i {
+    font-style: italic; /* Uses StoneSansStd-MediumItalic */
+}

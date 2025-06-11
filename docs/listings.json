@@ -22,10 +22,31 @@
   {
     "listing": "/research/index.html",
     "items": [
-      "/research/journal-articles/costeffective-covid-malaysia/index.html",
-      "/research/journal-articles/ScabiesSSTI-Costs-Fiji/index.html",
-      "/research/journal-articles/costEffective-COVID-boosting/index.html",
-      "/research/journal-articles/brisc-cost-effectiveness/index.html"
+      "/research/publications/costeffective-covid-malaysia/index.html",
+      "/research/publications/ScabiesSSTI-Costs-Fiji/index.html",
+      "/research/publications/costEffective-COVID-boosting/index.html",
+      "/research/publications/brisc-cost-effectiveness/index.html"
+    ]
+  },
+  {
+    "listing": "/learning/index.html",
+    "items": [
+      "/learning/concepts/sample-template/index.html",
+      "/learning/methods/sample-template/index.html",
+      "/learning/software/sample-template/index.html"
+    ]
+  },
+  {
+    "listing": "/reflections/index.html",
+    "items": [
+      "/reflections/passed-phd-confirmation-review/index.html",
+      "/reflections/brisc-cost-effectiveness-published/index.html"
+    ]
+  },
+  {
+    "listing": "/faith/index.html",
+    "items": [
+      "/faith/sample-worship-template.html"
     ]
   }
 ]

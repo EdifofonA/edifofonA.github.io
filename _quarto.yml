@@ -12,7 +12,7 @@ project:
 website:
   title: "Edifofon"
 #  description: "Edifofon is a research associate at The University of Melbourne Australia and Helpman Institute Abuja Nigeria"
-  favicon: "/files/icon.png"
+  favicon: "/assets/icon.png"
   site-url: "https://edifofon.com"
   repo-url: "https://github.com/EdifofonA"
   back-to-top-navigation: true
@@ -35,19 +35,20 @@ website:
     search: true
     background: light
     type: light
-    logo: "files/icon.png"
+    logo: "assets/icon.png"
 
     left:
-#      - text: "About"
-#        href: "index.qmd"
-      - text: "Blog"
-        href: "blog/index.qmd"
+      - text: "Profile"
+        href: "profile/index.qmd"
+      - text: "Reflections"
+        href: "reflections/index.qmd"
+      - text: "Faith"
+        href: "faith/index.qmd"    
       - text: "Research"
         href: "research/index.qmd"
-      # - text: "Learn"
-      #   href: "learn/index.qmd"
-      # - text: "Worship"
-      #   href: "worship/index.qmd"        
+      - text: "Learning"
+        href: "learning/index.qmd"
+    
     right:
       - icon: envelope
         aria-label: email
