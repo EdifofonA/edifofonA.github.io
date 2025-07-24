@@ -68,7 +68,7 @@
 
 /* Apply the fonts to the body */
 div, body {
-    font-family: "StoneSerifStd", serif;
+    font-family: "StoneSansStd", sans-serif;
 }
 
 /* Additional font styling for headings */
@@ -78,7 +78,7 @@ a, h1, h2, h3, h4, h5, h6 {
 
 /* Links in paragraphs to inherit the serif font */
 p a {
-    font-family: "StoneSerifStd", serif;
+    font-family: "StoneSansStd", sans-serif;
 }
 
 /* Specific font weights/styles*/
