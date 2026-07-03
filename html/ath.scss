@@ -80,12 +80,6 @@ $footer-fg: $deep !default;
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,500..700;1,500..700&family=Reddit+Mono:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
 
-@media (max-width: 768px) {
-  html, :root {
-    font-size: 87.5% !important;
-  }
-}
-
 body {
     -webkit-font-smoothing: antialiased;
 }
@@ -528,7 +522,14 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-mjx-container {
-  font-family: "STIX Two Math", "Cambria Math", serif;
-}
 
+@media (max-width: 768px) {
+  html, :root {
+    font-size: 14px !important; 
+  }
+  
+  body {
+    font-size: 14px !important;
+    --bs-body-font-size: 14px !important;
+  }
+}
