@@ -22,8 +22,8 @@ pub-info:
   # - name: Add to Zotero
   #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
   #   icon: ai ai-zotero
-  extra: >-
-    My master's thesis
+  # extra: >-
+  #   My master's thesis
 
 doi: 10.1080/14754835.2022.2030205
 ---

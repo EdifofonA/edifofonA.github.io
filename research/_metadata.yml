@@ -1,5 +1,5 @@
 # Date format
-date-format: "MMMM YYYY"
+date-format: "dddd, MMMM D, YYYY"
 
 # Enable banner style title blocks
 title-block-banner: "#E6E6E6"
@@ -9,6 +9,8 @@ title-block-banner-color: "#262835"
 toc: true
 toc-title: Contents
 toc-location: left
+
+freeze: true
 
 # Default knitr options
 execute:
