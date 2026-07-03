@@ -41,8 +41,8 @@ $navbar-font-family: "Red Hat Text" !default;
 $toc-font-family: "Red Hat Text" !default;
 $footer-font-family: "Red Hat Text" !default;
 
-$font-size-base: 1.05rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * .95 !default;
+$font-size-base: 1.0rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.9 !default;
 
 
 // Body
@@ -520,16 +520,4 @@ pre.text, pre.sourceCode, .cell-output pre {
     @media (max-width: map-get($grid-breakpoints, md)) {
         left: 0;
     }
-}
-
-
-@media (max-width: 768px) {
-  html, :root {
-    font-size: 14px !important; 
-  }
-  
-  body {
-    font-size: 14px !important;
-    --bs-body-font-size: 14px !important;
-  }
 }
