@@ -1,5 +1,5 @@
 # Date format
-date-format: "dddd, MMMM D, YYYY"
+date-format: "D MMMM YYYY"
 
 # Enable banner style title blocks
 title-block-banner: "#E6E6E6"
