@@ -8,7 +8,6 @@ format:
     embed-resources: true
     quarto-template-params:
       banner-header-class: "home"
-    css: style.css
 ---
 
 ::::: grid
