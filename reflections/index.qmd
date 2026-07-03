@@ -9,9 +9,10 @@ listing:
   # - id: posts_2023
   #   contents: "2023/**/index.qmd"
   #   sort: "date desc"
-  - id: reflections
+  - id: reflect
     contents: "**/index.qmd"
     sort: "date desc"
+    template: ../html/blog/listing.ejs
     categories: true
 page-layout: full
 toc-title: Year
@@ -35,5 +36,5 @@ comments: false
 
 <!-- ## 2022 -->
 
-::: {#reflections}
+::: {#reflect}
 :::

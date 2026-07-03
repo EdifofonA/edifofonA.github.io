@@ -38,24 +38,26 @@ website:
     logo: "assets/icon.png"
 
     left:
-      - text: "Profile"
-        href: "profile/index.qmd"
+      - text: "About"
+        href: "about/index.qmd"
       - text: "Reflections"
         href: "reflections/index.qmd"
-      - text: "Faith"
-        href: "faith/index.qmd"    
+      # - text: "Faith"
+      #   href: "faith/index.qmd"    
       - text: "Research"
         href: "research/index.qmd"
       - text: "Learning"
         href: "learning/index.qmd"
+      # - text: "Tools"
+      #   href: "tools/index.qmd"
     
     right:
       - icon: envelope
         aria-label: email
         href: "mailto:edifofonakpan@gmail.com"
-      # - icon: twitter
-      #   aria-label: twitter
-      #   href: https://twitter.com/EdifofonA
+      - icon: github
+        aria-label: github
+        href: https://github.com/EdifofonA
       - icon: linkedin
         aria-label: linkedin
         href: https://www.linkedin.com/in/edifofon
@@ -64,7 +66,6 @@ format:
   html:
     theme: 
       - html/ath.scss
-    css: styles.css
     toc: true
     grid:
       sidebar-width: 250px

@@ -1,6 +1,6 @@
 ---
 title: "Cost-effective boosting allocations in the post-Omicron era of COVID-19 management"
-date: 2024-01-03
+date: 2025-09-30
 # author:
 #   - name: Thao P. Le
 #     orcid: 
@@ -26,13 +26,13 @@ categories:
   - Global health
 pub-info:
   reference: >-
-    Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, et al. “Cost-effective boosting allocations in the post-Omicron era of COVID-19 management.” <em>medRxiv.</em> 2022; 2023. doi:<a href="https://doi.org/10.1101/2023.11.14.23298536"><code>10.1101/2023.11.14.23298536</code></a>
+    Le TP, Conway E, <strong>Akpan E</strong>, Abell I, Abraham P, Baker CM, et al. “Health impact and cost-effectiveness of COVID-19 booster vaccination strategies in the early post-Omicron era: a dynamic modelling study.” <em>BMJ Global Health.</em> 2025; 2023. doi:<a href="https://doi.org/10.1136/bmjgh-2024-016096"><code>10.1136/bmjgh-2024-016096</code></a>
   links:
-  - name: Preprint
+  - name: Preprint (medRxiv)
     url: le-2024-preprint.pdf
     local: true
     icon: fa-solid fa-file-pdf
-  - name: Code notebook
+  - name: Code repository
     url: https://github.com/spectrum-spark/covid-CEA
     icon: fa-brands fa-github
   # - name: Add to Zotero
@@ -41,7 +41,7 @@ pub-info:
   extra: >-
     This study evaluated impact of future COVID-19 booster doses in high-income settings with older populations.
 
-doi: 10.1101/2023.11.14.23298536
+doi: 10.1136/bmjgh-2024-016096
 ---
 
 ## Abstract

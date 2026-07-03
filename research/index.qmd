@@ -2,7 +2,6 @@
 title: "Research"
 listing:
   - id: publications
-    # contents: "publications/*/index.qmd"
     contents: "*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
@@ -27,6 +26,7 @@ Most of my research has involved costing or cost-effectiveness analyses to infor
 <!-- ## Preprints -->
 
 <!-- ::: {#preprints} -->
+
 <!-- ::: -->
 
 <!-- ## Reports -->

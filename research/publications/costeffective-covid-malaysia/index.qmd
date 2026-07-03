@@ -28,7 +28,7 @@ pub-info:
   reference: >-
     Carvalho N, Jayasundara P, Abd Rahim KNK, <strong>Akpan E</strong>, Devine A, Hughes A, et al. “Epidemiologic and economic modelling of COVID-19 public health interventions in Malaysia during 2021 and 2022.” <em>Melbourne Health Economics</em> 2024. doi:<a href="https://doi.org/10.26188/28015307.v1"><code>10.26188/28015307.v1</code></a>
   links:
-  - name: Preprint
+  - name: Preprint (Figshare)
     url: le-2024-preprint.pdf
     local: true
     icon: fa-solid fa-file-pdf

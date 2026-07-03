@@ -13,18 +13,15 @@
   },
   {
     "listing": "/learn/index.html",
-    "items": [
-      "/learn/concepts/sample-template/index.html",
-      "/learn/methods/sample-template/index.html",
-      "/learn/software/sample-template/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/publications/burden-covid19-malaysia/index.html",
+      "/research/publications/costEffective-COVID-boosting/index.html",
       "/research/publications/costeffective-covid-malaysia/index.html",
       "/research/publications/ScabiesSSTI-Costs-Fiji/index.html",
-      "/research/publications/costEffective-COVID-boosting/index.html",
       "/research/publications/brisc-cost-effectiveness/index.html"
     ]
   },
@@ -42,5 +39,12 @@
   {
     "listing": "/faith/index.html",
     "items": []
+  },
+  {
+    "listing": "/reflect/index.html",
+    "items": [
+      "/reflect/passed-phd-confirmation-review/index.html",
+      "/reflect/brisc-cost-effectiveness-published/index.html"
+    ]
   }
 ]

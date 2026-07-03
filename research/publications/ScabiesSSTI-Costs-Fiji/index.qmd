@@ -16,11 +16,12 @@ pub-info:
   reference: >-
     <strong>Akpan E</strong>, Thean LJ, Baskota R, Mani J, Mow M, Sahukhan A, et al. “Costs of primary healthcare presentations and hospital admissions for scabies and related skin infections in Fiji, 2018-2019.” <em>PLOS Global Public Health.</em> 2024; 4(10):e0003706. doi:<a href="https://doi.org/10.1371/journal.pgph.0003706"><code>10.1371/journal.pgph.0003706</code></a>
   links:
-  - name: Code notebook
+  - name: Code repository
     url: https://github.com/EdifofonA/ScabiesSSTI-Costs-Fiji
     icon: fa-brands fa-github
-  - name: Final version
+  - name: Journal article
     url: https://doi.org/10.1371/journal.pgph.0003706
+    icon: fa-solid fa-scroll
 
 doi: 10.1371/journal.pgph.0003706
 ---

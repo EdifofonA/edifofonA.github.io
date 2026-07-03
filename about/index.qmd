@@ -1,0 +1,43 @@
+---
+title: About
+date: June 2026
+title-block-banner: "#E6E6E6"
+title-block-banner-color: "#262835"
+published-title: Most recent CV
+engine: knitr 
+cv:
+  pdf: "edifofon-curriculum-vitae.pdf"
+page-layout: full
+---
+
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
+
+```{=html}
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.2px"></iframe>
+</div>
+
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  </a>
+</p>
+```
