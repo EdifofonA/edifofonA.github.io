@@ -41,8 +41,8 @@ $navbar-font-family: "Red Hat Text" !default;
 $toc-font-family: "Red Hat Text" !default;
 $footer-font-family: "Red Hat Text" !default;
 
-$font-size-base: 1.0rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * 0.9 !default;
+$font-size-base: 1.05rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.95 !default;
 
 
 // Body
@@ -525,8 +525,8 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 @media (max-width: 767.98px) {
   :root {
-    font-size: 95% !important;
-    --bs-root-font-size: 95% !important;
+    font-size: 97.5% !important;
+    --bs-root-font-size: 97.5% !important;
     --bs-body-font-size: 1rem !important;
   }
 }
