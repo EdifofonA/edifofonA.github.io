@@ -1,25 +1,6 @@
 ---
 title: "Cost-effective boosting allocations in the post-Omicron era of COVID-19 management"
 date: 2025-09-30
-# author:
-#   - name: Thao P. Le
-#     orcid: 
-#     affiliation: University of Melbourne
-#   - name: Eamon Conway
-#     orcid: 
-#     affiliation: University of Melbourne
-#   - name: Edifofon Akpan
-#     orcid: 0000-0003-3506-7590
-#     affiliation: University of Melbourne
-#   - name: Yingying Wang
-#     orcid: 
-#     affiliation: University of Melbourne
-#   - name: Natalie Carvalho
-#     orcid: 0000-0002-5599-2209
-#     affiliation: University of Melbourne
-#   - name: Jodie McVernon
-#     orcid: 
-#     affiliation: University of Melbourne
 categories:
   - R
   - Cost-effectiveness
@@ -35,9 +16,6 @@ pub-info:
   - name: Code repository
     url: https://github.com/spectrum-spark/covid-CEA
     icon: fa-brands fa-github
-  # - name: Add to Zotero
-  #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
-  #   icon: ai ai-zotero
   extra: >-
     This study evaluated impact of future COVID-19 booster doses in high-income settings with older populations.
 

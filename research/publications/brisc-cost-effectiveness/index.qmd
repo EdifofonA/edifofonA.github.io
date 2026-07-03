@@ -1,13 +1,6 @@
 ---
 title: "Cost-effectiveness of universal iron supplementation and iron-containing micronutrient powders for anemia among young children in rural Bangladesh"
 date: 2022-10-03
-# author:
-#   - name: Edifofon Akpan
-#     orcid: 0000-0003-3506-7590
-#     affiliation: Melbourne School of Population and Global Health
-#   - name: Natalie Carvalho
-#     orcid: 0000-0002-5599-2209
-#     affiliation: Melbourne School of Population and Global Health
 categories:
   - Stata
   - Cost-effectiveness

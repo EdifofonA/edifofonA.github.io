@@ -1,11 +1,6 @@
 ---
 title: "Health and economic burden of COVID-19 in Malaysia between January 2020 and December 2022"
 date: 2026-01-30
-# author:
-#   - name: Edifofon Akpan
-#     orcid: 0000-0003-3506-7590
-#   - name: Natalie Carvalho
-#     affiliation: University of Melbourne
 categories:
   - Costing
   - R
@@ -14,9 +9,6 @@ pub-info:
   reference: >-
     <strong>Akpan E</strong>, Ku Abd Rahim KN, Devine A, Sharifa Ezat WP, Abraham P, Ali FZ, et al. “Health and economic burden of COVID-19 in Malaysia between January 2020 and December 2022..” <em>Public Health.</em> 2026; 250:105992. doi:<a href="https://doi.org/10.1016/j.puhe.2025.105992"><code>10.1016/j.puhe.2025.105992</code></a>
   links:
-  # - name: Code repository
-  #   url: https://github.com/EdifofonA/ScabiesSSTI-Costs-Fiji
-  #   icon: fa-brands fa-github
   - name: Journal article
     url: https://doi.org/10.1016/j.puhe.2025.105992
     icon: fa-solid fa-scroll

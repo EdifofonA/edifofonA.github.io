@@ -1,25 +1,6 @@
 ---
 title: "Epidemiologic and economic modelling of COVID-19 public health interventions in Malaysia during 2021 and 2022"
 date: 2024-12-12
-# author:
-#   - name: Thao P. Le
-#     orcid: 
-#     affiliation: University of Melbourne School of Mathematics and Statistics
-#   - name: Eamon Conway
-#     orcid: 
-#     affiliation: University of Melbourne Centre for Data Science
-#   - name: Edifofon Akpan
-#     orcid: 0000-0003-3506-7590
-#     affiliation: University of Melbourne School of Population and Global Health
-#   - name: Yingying Wang
-#     orcid: 
-#     affiliation: University of Melbourne School of Population and Global Health
-#   - name: Natalie Carvalho
-#     orcid: 0000-0002-5599-2209
-#     affiliation: Melbourne School of Population and Global Health
-#   - name: Jodie McVernon
-#     orcid: 
-#     affiliation: Melbourne School of Population and Global Health
 categories:
   - R
   - Cost-effectiveness
@@ -32,9 +13,6 @@ pub-info:
     url: le-2024-preprint.pdf
     local: true
     icon: fa-solid fa-file-pdf
-  # - name: Code notebook
-  #   url: https://github.com/spectrum-spark/covid-CEA
-  #   icon: fa-brands fa-github
   # - name: Add to Zotero
   #   url: https://www.zotero.org/save?type=doi&q=10.1093/ajcn/nqac225
   #   icon: ai ai-zotero
