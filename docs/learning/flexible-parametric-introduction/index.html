@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
+<meta name="author" content="Edifofon Akpan">
+<meta name="dcterms.date" content="2025-07-28">
 
-<title>Learning – Edifofon</title>
+<title>Flexible parametric models (Part 1): An Introduction – Edifofon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,26 +22,44 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<link href="..//assets/icon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ac8197d8e283738e747a74027593b1b8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4ef08d70eb90a2b5ef89103b797b45a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<link href="../..//assets/icon.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ac8197d8e283738e747a74027593b1b8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4ef08d70eb90a2b5ef89103b797b45a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -56,35 +75,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-learning .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-learning'] = new List('listing-learning', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -135,17 +125,17 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/icon.png" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/icon.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Edifofon</span>
     </a>
   </div>
@@ -156,19 +146,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about/index.html"> 
+    <a class="nav-link" href="../../about/index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../reflections/index.html"> 
+    <a class="nav-link" href="../../reflections/index.html"> 
 <span class="menu-text">Reflections</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research/index.html"> 
+    <a class="nav-link" href="../../research/index.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../learning/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../learning/index.html"> 
 <span class="menu-text">Learning</span></a>
   </li>  
 </ul>
@@ -198,81 +188,103 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Learning</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Flexible parametric models (Part 1): An Introduction</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Survival analysis</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://edifofon.com/">Edifofon Akpan</a> <a href="https://orcid.org/0000-0002-6646-206X" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">28 July 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBhbmFseXNpcw==">Survival analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
 
-<!-- ## Concepts -->
-<!-- ::: {#concepts} -->
-<!-- ::: -->
-<!-- ## Methods -->
-<!-- ::: {#methods} -->
-<!-- ::: -->
-<!-- ## Software -->
-<!-- ::: {#software} -->
-<!-- ::: -->
+<p>Recall that the Cox model is considered semi-parametric because it leaves the baseline hazard function unspecified. This approach allows the hazard to follow any shape that best fits the observed data, without assuming a specific mathematical form. However, since the baseline hazard is not estimated, the Cox model can only provide relative effects of covariates (e.g., hazard ratios), and cannot be used directly to estimate absolute risks, make survival predictions, or extrapolate beyond the observed follow-up period.</p>
+<p>In standard parametric models, the baseline hazard is defined by a limited set of interpretable parameters. For example, the Weibull baseline hazard function is defined based on the scale parameter <span class="math inline">\(\lambda&gt;0\)</span> and the shape parameter <span class="math inline">\(\delta&gt;0\)</span>. This baseline hazard is monotonic; i.e., it is either strictly increasing or strictly decreasing, depending on the value of the shape parameter <span class="math inline">\(\delta&gt;0\)</span>.</p>
+<p><span class="math display">\[
+h_0(t) = \lambda \gamma t^{\gamma - 1}
+\]</span></p>
+<p>Flexible parametric models (FPM) were developed by <span class="citation" data-cites="royston2002">Royston and Parmar (<a href="#ref-royston2002" role="doc-biblioref">2002</a>)</span> as an alternative to standard parametric models, while retaining the flexibility of the Cox model in modelling the baseline hazard. Consider a Weibull model for the baseline hazard, fitted on the log cumulative hazard scale.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;How did we get here? Integrating the Weibull hazard function <span class="math inline">\(h_0(t) = \lambda \gamma t^{\gamma - 1}\)</span> from 0 to <span class="math inline">\(t\)</span> gives the Weibull cumulative hazard function <span class="math inline">\(H_0(t) = \lambda t^\gamma\)</span>. Taking the natural log of both sides of the equation gives <span class="math inline">\(\ln H_0(t) = \ln \lambda + \gamma \ln t\)</span></p></div></div><p><span class="math display">\[
+\ln H_0(t) = \ln \lambda +  \gamma \ln t \notag
+\]</span></p>
+<p>This result shows that the log cumulative hazard function is a linear function of the log time. Setting, <span class="math inline">\(\ln\lambda=\gamma_0\)</span> and <span class="math inline">\(\gamma=\gamma_1\)</span>, the Weibull model with covariates <span class="math inline">\(\mathbf{x}=(x_1, x_2, ..., x_k)\)</span>, with corresponding parameters <span class="math inline">\(\boldsymbol{\beta}=(\beta_1, \beta_2, ..., \beta_k)\)</span> is given below.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;For example, if there are only two covariates <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span>, the corresponding parameters will be <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span>. The log cumulative hazard function then becomes <span class="math inline">\(\ln H(t, x_1, x_2) = \ln H_0(t) + x_1\beta_1 + x_2\beta_2\)</span></p></div></div><p><span class="math display">\[\begin{align}
+\ln H(t, \mathbf{x})
+&amp;= \gamma_0 +  \gamma_1  + \mathbf{x}\boldsymbol{\beta} \notag \\
+&amp;= \ln H_0(t)  +  \mathbf{x}\boldsymbol{\beta}
+\end{align}\]</span></p>
+<p>Rather than assuming linearity, flexible parametric models use splines for <span class="math inline">\(\ln t\)</span>. Spline functions are used to model non-linear functions of time, and are constructed by dividing the time scales into a number of intervals, and within each interval, assigning a cubic polynomial function of survival time.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> The interval boundaries are known as knots. Typically, the smallest and largest observed survival times serve as <em>boundary knots</em>, while additional <em>internal knots</em> are placed at specific quantiles of the data. For example, if internal knots are placed at quartiles of log survival time, there would be two boundary knots (at the minimum and maximum values) and three internal knots (at the 25th, 50th, and 75th percentiles). This partitions the log survival time axis into four intervals.</p>
+<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;A polynomial function is a mathematical expression made by adding terms that consist of a variable raised to non-negative integer powers, each multiplied by a constant coefficient. These functions are differentiable, meaning they have a well-defined slope (called the first derivative) at every point, and this slope itself changes smoothly. The second derivative, which represents the rate of change of the slope, describes the curvature of the function and helps determine whether the graph is bending upward or downward. Spline functions of degree 3, also known as cubic splines, are commonly used in flexible parametric models.</p></div><div id="fn4"><p><sup>4</sup>&nbsp;Natural splines and restricted cubic splines both apply linearity constraints beyond the boundary knots, though they do so in slightly different ways. As I understand it, they ultimately yield the same fitted values in a statistical model. However, I’m still unclear on exactly how the methods differ in the way they enforce those constraints.</p></div></div><p>To ensure smoothness, the individual cubic polynomial functions are constrained to join continuously at the knots. These constraints mean the polynomial pieces cannot vary independently. Instead, the cubic spline is represented as a linear combination of <span class="math inline">\(m\)</span> basis functions, with <span class="math inline">\(m\)</span> being the number of internal knots. Each basis function is defined over the entire range of the time variable, with the shape controlled by the placement of the knots. A cubic spline that is additionally constrained to be linear beyond the boundary knots (i.e., before the first knot and after the last knot), is known as a <em>restricted cubic spline</em> (or a natural spline).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> This restriction enhances numerical stability toward the minimum and maximum observed values, where data are typically sparse <span class="citation" data-cites="royston2002 collett2023">(<a href="#ref-royston2002" role="doc-biblioref">Royston and Parmar 2002</a>; <a href="#ref-collett2023" role="doc-biblioref">Collett 2023</a>)</span> . This is where there is often less data and standard cubic splines tend to be sensitive to a few extreme values We nearly always put the boundary knots at the minimum and maximum event times and so the restriction of linearity is not actually within the range of our data, but the linear restrictions help to stabilize the estimated function.</p>
+<p>We can therefore extend the baseline function of the Weibull model above, to a spline function of <span class="math inline">\(\ln{t}\)</span> as follows</p>
+<p><span class="math display">\[\begin{align}
+\ln H(t, \mathbf{x}) = s(\ln{t}, \gamma) +  \mathbf{x}\boldsymbol{\beta}
+\end{align}\]</span></p>
+<p>where the baseline cumulative hazard function <span class="math inline">\(s(\ln{t;} \gamma)=\ln H_0(t)\)</span> is a restricted cubic spline function. With five knots <span class="math inline">\(k_1, k_2, ..., k_5\)</span>, there are two boundary knots (<span class="math inline">\(k_1, k_5\)</span>) and three internal knots (<span class="math inline">\(k_2,k_3, k_4\)</span>). The flexible parametric model is expressed as</p>
+<p><span class="math display">\[\begin{align}
+\ln H(t, \mathbf{x}) = \gamma_0 + \gamma_1 z_1 + \gamma_2 z_2 + \gamma_3 z_3 + \gamma_4 z_4 + \mathbf{x} \boldsymbol{\beta} \notag
+\end{align}\]</span></p>
+<p>where (<span class="math inline">\(z_1\)</span> = <span class="math inline">\(\ln t\)</span>) is the linear term, and (<span class="math inline">\(z_2, z_3, z_4\)</span>) are restricted cubic spline basis functions of <span class="math inline">\(\ln t\)</span>, nonlinear components capturing curvature around internal knots <span class="math inline">\(k_2\)</span>, <span class="math inline">\(k_3\)</span>, and <span class="math inline">\(k_4\)</span>.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;Here, <span class="math inline">\(z_1 = x\)</span>, <span class="math inline">\(z_j = (x - k_j)_+^3 - \frac{k_K - k_j}{k_K - k_1}(x - k_1)_+^3 + \frac{k_j - k_1}{k_K - k_1}(x - k_K)_+^3, \quad \text{for } j = 2,3,4\)</span></p>
+<p><span class="math inline">\(\text{where } (x - k)_+^3 = \begin{cases} (x - k)^3, &amp; \text{if } x &gt; k \\ 0, &amp; \text{otherwise} \end{cases}\)</span></p></div></div><p>Since <span class="math inline">\(\mathbf{x}\boldsymbol{\beta}\)</span> does not depend on time, this is a proportional cumulative hazards model. To allow non-proportional hazards (time-dependent covariate effects), we include interactions between covariates and restricted cubic splines for log time into the model:</p>
+<p><span class="math display">\[\begin{align}
+\ln H(t, \mathbf{x}) = s(\ln{t}, \gamma) + \mathbf{x}\boldsymbol{\beta} + \sum_{i=1}^{D} s(\ln{t},\gamma_i) x_i
+\end{align}\]</span></p>
+<p>where <span class="math inline">\(D\)</span> is the number of time-dependent covariate effects, and <span class="math inline">\(s(x; \gamma\_i)\)</span> is the restricted cubic spline function for the <span class="math inline">\(i\)</span>th time-dependent effect.</p>
+<p>We can transform the log cumulative hazard functions to the survival scale or the hazard scale [REF]</p>
+<p><span class="math display">\[\begin{align}
+    S(t, \mathbf{x}) = \exp\{−\exp [\ln H(t,\mathbf{x})])\}
+\end{align}\]</span> <span class="math display">\[\begin{align}
+h(t, \mathbf{x}) = \frac{d \, \ln H_{0}(t)}{dt}  \exp [\ln H(t,\mathbf{x})]
+\end{align}\]</span></p>
+<p>Finally, it is also possible to fit FPMs on scales other than the hazard scale <span class="citation" data-cites="royston2002">(<a href="#ref-royston2002" role="doc-biblioref">Royston and Parmar 2002</a>)</span>. In the <em>proportional odds</em> FPM, the response is the log cumulative odds of failure, that is, <span class="math inline">\(\log\left(\frac{1 - S(t)}{S(t)}\right)\)</span>, and when no internal knots are included, the model reduces to the <em>log-logistic</em> parametric model. In the <em>probit-scale</em> FPM, the response is the inverse of the standard normal cumulative distribution function applied to the survival probability, i.e., <span class="math inline">\(\Phi^{-1}(S(t))\)</span>, where <span class="math inline">\(\Phi^{-1}\)</span> is the probit function. When no internal knots are used, this model is equivalent to the <em>log-normal</em> parametric survival model.</p>
 
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-learning">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U3Vydml2YWwlMjBhbmFseXNpcw==" data-listing-date-sort="1753657200000" data-listing-file-modified-sort="1753630667000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
-<div class="thumbnail"><a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
 
-<img loading="lazy" src="../learning/flexible-parametric-introduction" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../learning/flexible-parametric-introduction/index.html" class="no-external">Flexible Parametric Models - An Introduction</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3Vydml2YWwlMjBhbmFseXNpcw=='); return false;">Survival analysis</div>
-
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-collett2023" class="csl-entry" role="listitem">
+Collett, David. 2023. <em>Modelling Survival Data in Medical Research</em>. Fourth edition. Boca Raton: CRC Press Taylor &amp; Francis Group.
 </div>
-<div class="delink listing-description"><a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
-Recall that the Cox model is considered semi-parametric because it leaves the baseline hazard function unspecified. This approach allows the hazard to follow any shape that…
-</a></div>
+<div id="ref-royston2002" class="csl-entry" role="listitem">
+Royston, Patrick, and Mahesh K. B. Parmar. 2002. <span>“Flexible Parametric Proportional<span>-</span>Hazards and Proportional<span>-</span>Odds Models for Censored Survival Data, with Application to Prognostic Modelling and Estimation of Treatment Effects.”</span> <em>Statistics in Medicine</em> 21 (15): 2175–97. <a href="https://doi.org/10.1002/sim.1203">https://doi.org/10.1002/sim.1203</a>.
 </div>
-<div class="metadata">
-<a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
-<div class="listing-date">
-July 28, 2025
-</div>
-<div class="listing-author">
-Edifofon Akpan
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

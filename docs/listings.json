@@ -27,7 +27,9 @@
   },
   {
     "listing": "/learning/index.html",
-    "items": []
+    "items": [
+      "/learning/flexible-parametric-introduction/index.html"
+    ]
   },
   {
     "listing": "/reflections/index.html",
