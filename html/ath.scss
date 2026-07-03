@@ -81,11 +81,10 @@ $footer-fg: $deep !default;
 @import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
 
 @media (max-width: 768px) {
-  :root {
-    font-size: 87.5%; // ≈ 14px if base is 16px
+  html {
+    font-size: 87.5%;
   }
 }
-
 
 body {
     -webkit-font-smoothing: antialiased;
