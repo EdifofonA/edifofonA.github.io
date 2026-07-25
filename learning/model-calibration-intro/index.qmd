@@ -1,0 +1,58 @@
+---
+title: "Calibrating disease simulation models, part 1: Introduction"
+date: 2025-07-08
+description: "Work in Progress"
+image: ""
+categories:
+  - Decision modelling
+  - Bayesian statistics
+# tags:
+#   - Survival analysis
+format: 
+  html:
+    toc-depth: 2
+fig-cap-location: margin
+reference-location: margin
+# citation-location: margin
+zotero: "phd-thesis"
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.align = "center", fig.retina = 3,
+                      fig.width = 6, fig.height = (6 * 0.618),
+                      out.width = "90%", collapse = TRUE)
+options(digits = 3, width = 300)
+```
+
+# Validation and Calibration
+
+The first thing would be to define terms - validation and calibration. Validation refers to methods for judging how accurate a model is in predicting the outputs. The extent of this accuracy is referred to as validity, of which there are five types
+
+-   face validity: the extent to which the problem formulation and model structure correspond to current evidence as subjectively judged by clinical experts or other stakeholders with expertise in the condition.
+
+-   internal validity: the extent to which the model equations and code are accurate as well as the consistency of those calculations with the model structure
+
+-   cross-validity: the extent to which the model produces similar results to other models intended for the same purpose
+
+-   predictive validity: the extent to which the model predicts results for data not yet observed
+
+-   external validity: the extent to which the model's results corresponding to real-world data
+
+Calibration is a set of methods for improving external validity, commonly implemented by adjusting unobserved or unavailable[^1] model parameters to plausible values so that the model's output matches real-world data. For example, in the [MiMiC-BlaKy model](https://eprints.whiterose.ac.uk/id/eprint/213043/), one of the calibrated parameters was the annual probability of diagnosis for each stage of undiagnosed cancer. Others were the annual probability of moving from a low-risk bladder to a high-risk bladder cancer progression pathway, speed of tumour progression through stages in undiagnosed patients, and a yearly reduction in the probability of symptomatic diagnosis for individuals over the age of 75 years. These parameters cannot be observed, as data on cancer relates to diagnosed patients only.
+
+[^1]: Parameters are unobserved when it is not possible to record these, such as the progression of undiagnosed cancer. Unavailable parameters, however, can in principle be observed but not are missing, owing to data limitations
+
+# **Model Calibration Methods**
+
+Once the calibration parameters have been selected, the steps in calibration include identifying the [calibration target](#sec-calibration-step-1), selecting the [goodness of fit (GOF) measure](#sec-calibration-step-2), choosing the parameter [search algorithm](#sec-calibration-step-3), specifying the [acceptance criteria](#sec-calibration-step-4), and specifying a [stopping rule](#sec-calibration-step-5).
+
+## Calibration target {#sec-calibration-step-1}
+
+## GOF measure {#sec-calibration-step-2}
+
+## Search algorithm {#sec-calibration-step-3}
+
+## Acceptance criteria {#sec-calibration-step-4}
+
+## Stopping rule {#sec-calibration-step-5}

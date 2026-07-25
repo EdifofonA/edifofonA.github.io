@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Edifofon Akpan">
-<meta name="dcterms.date" content="2025-05-26">
-<meta name="description" content="An appreciation note to all those who were instrumental in the early stages of my PhD at The University of Sheffield">
+<meta name="dcterms.date" content="2025-07-08">
+<meta name="description" content="Work in Progress">
 
-<title>My Confirmation Review for a PhD in Public Health Economics and Decision Science – Edifofon</title>
+<title>Calibrating disease simulation models, part 1: Introduction – Edifofon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ background: #E6E6E6;
 
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="floating nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -141,14 +141,15 @@ background: #E6E6E6;
 <header id="title-block-header" class="quarto-title-block default blog-post page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">My Confirmation Review for a PhD in Public Health Economics and Decision Science</h1>
+      <h1 class="title">Calibrating disease simulation models, part 1: Introduction</h1>
                   <div>
         <div class="description">
-          An appreciation note to all those who were instrumental in the early stages of my PhD at The University of Sheffield
+          Work in Progress
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">studies</div>
+                <div class="quarto-category">Decision modelling</div>
+                <div class="quarto-category">Bayesian statistics</div>
               </div>
                   </div>
   </div>
@@ -166,7 +167,7 @@ background: #E6E6E6;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">26 May 2025</p>
+        <p class="date">8 July 2025</p>
       </div>
     </div>
     
@@ -177,7 +178,21 @@ background: #E6E6E6;
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#validation-and-calibration" id="toc-validation-and-calibration" class="nav-link active" data-scroll-target="#validation-and-calibration">Validation and Calibration</a></li>
+  <li><a href="#model-calibration-methods" id="toc-model-calibration-methods" class="nav-link" data-scroll-target="#model-calibration-methods"><strong>Model Calibration Methods</strong></a>
+  <ul class="collapse">
+  <li><a href="#sec-calibration-step-1" id="toc-sec-calibration-step-1" class="nav-link" data-scroll-target="#sec-calibration-step-1">Calibration target</a></li>
+  <li><a href="#sec-calibration-step-2" id="toc-sec-calibration-step-2" class="nav-link" data-scroll-target="#sec-calibration-step-2">GOF Measure</a></li>
+  <li><a href="#sec-calibration-step-3" id="toc-sec-calibration-step-3" class="nav-link" data-scroll-target="#sec-calibration-step-3">Search algorithm</a></li>
+  <li><a href="#sec-calibration-step-4" id="toc-sec-calibration-step-4" class="nav-link" data-scroll-target="#sec-calibration-step-4">Acceptance criteria</a></li>
+  <li><a href="#sec-calibration-step-5" id="toc-sec-calibration-step-5" class="nav-link" data-scroll-target="#sec-calibration-step-5">Stopping rule</a></li>
+  </ul></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -190,27 +205,39 @@ background: #E6E6E6;
 
 
 
-<p>A few days ago (14 May), I had my confirmation review (or upgrade) for a <a href="https://www.pheds-dtc.ac.uk/">PhD in Public Health Economics and Decision Science</a> at The University of Sheffield.</p>
-<p>During the session, I discussed my project, which focuses on developing and applying decision models to estimate the potential impact of delivering multiple cancer screening interventions simultaneously to high-risk populations. After a 90-minute viva (which felt longer!), I was pleased to receive the news that my doctoral status was confirmed (pass, no corrections).</p>
-<div id="fig-phd-cr-slide" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
-<figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-phd-cr-slide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="phd-cr-slide.jpeg" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-phd-cr-slide-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: First slide of my confirmation review presentation. Credits: Edifofon Akpan.
-</figcaption>
-</figure>
-</div>
-<p>I’d like to thank my amazing team of supervisors (<a href="https://www.linkedin.com/in/lena-olena-mandrik-37341b11/">Lena</a>, Chloe, and <a href="https://www.linkedin.com/in/nick-latimer-29ab571/">Nick</a>) for their challenging thoughts on my plans and for reviewing the report. I would also like to thank Harry and <a href="https://www.linkedin.com/in/sarah-ren-950856223/">Sarah</a>, my two examiners, for taking the time to read through my ~20,000-word document (with loads of appendices!) and for providing excellent comments that I will work on over the next two years. I’d like to extend my appreciation to the many cancer experts who kindly answered my questions about screening processes and clinical pathways. Their insights were instrumental in helping me conceptualise my modelling plans.<br>
-<br>
-I am grateful to mentors and colleagues who have shaped my journey so far. <a href="https://www.linkedin.com/in/tessa-peasgood-266a5b2b4/">Tessa</a>, <a href="https://www.linkedin.com/in/natalie-carvalho-898203/">Natalie</a>, <a href="https://www.linkedin.com/in/pete-dodd-46689440/">Pete</a>, and <a href="https://www.linkedin.com/in/alan-brennan-1445392b/">Alan</a> have provided invaluable guidance and encouragement throughout my academic and professional journey. Parts of my research plan were presented at the Screening Modellers Meeting at SCHARR, where I received insightful feedback from many attendees. I am also thankful to colleagues, especially <a href="https://www.linkedin.com/in/wael-mohammed/">Wael</a>, Thomas Gachie, <a href="https://www.linkedin.com/in/james-oguta-05469788/">James</a> and <a href="https://www.linkedin.com/in/elvis-omondi-wambiya-80175610b/">Elvis</a>, for their thoughtful discussions and constructive input on various aspects of my plans. My PhD has greatly benefited from the expertise of <a href="https://www.linkedin.com/in/robert-smith-dpa/">Rob</a> and Wael (again) at <a href="https://www.linkedin.com/company/dark-peak-analytics/">Dark Peak Analytics</a>, whose teaching in the Efficient Microsimulation Course has influenced my modelling plans. I can’t recommend that course enough.</p>
-<p>Scholarships have played a key role in my academic journey, by removing financial barriers to accessing world-class education and research opportunities. So, I am grateful to the <a href="https://www.linkedin.com/company/wellcome-trust/">Wellcome Trust</a> for their exceptionally generous support of my PhD. This funding has covered tuition and living expenses, provided a separate budget for career development activities, and reimbursed my immigration-related costs (well over £8k). My previous studies were also fully funded: the <a href="https://www.linkedin.com/company/australia-awards-%E2%80%93-africa/">Australia Awards Africa</a> for my master’s degree, and the Agbami/Chevron Scholarship during my undergraduate studies.<br>
-<br>
-Finally, I am profoundly grateful to my lovely wife, Idy, and our son, Andiong, for their unwavering patience and support. I am especially thankful to my wife, who has generously rearranged her work schedule on multiple occasions to support my commitments.<br>
-<br>
-Incroyable!</p>
+<section id="validation-and-calibration" class="level1 page-columns page-full">
+<h1>Validation and Calibration</h1>
+<p>The first thing would be to define terms - validation and calibration. Validation refers to methods for judging how accurate a model is in predicting the outputs. The extent of this accuracy is referred to as validity, of which there are five types</p>
+<ul>
+<li><p>face validity: the extent to which the problem formulation and model structure correspond to current evidence as subjectively judged by clinical experts or other stakeholders with expertise in the condition.</p></li>
+<li><p>internal validity: the extent to which the model equations and code are accurate as well as the consistency of those calculations with the model structure</p></li>
+<li><p>cross-validity: the extent to which the model produces similar results to other models intended for the same purpose</p></li>
+<li><p>predictive validity: the extent to which the model predicts results for data not yet observed</p></li>
+<li><p>external validity: the extent to which the model’s results corresponding to real-world data</p></li>
+</ul>
+<p>Calibration is a set of methods for improving external validity, commonly implemented by adjusting unobserved or unavailable<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> model parameters to plausible values so that the model’s output matches real-world data. For example, in the <a href="https://eprints.whiterose.ac.uk/id/eprint/213043/">MiMiC-BlaKy model</a>, one of the calibrated parameters was the annual probability of diagnosis for each stage of undiagnosed cancer. Others were the annual probability of moving from a low-risk bladder to a high-risk bladder cancer progression pathway, speed of tumour progression through stages in undiagnosed patients, and a yearly reduction in the probability of symptomatic diagnosis for individuals over the age of 75 years. These parameters cannot be observed, as data on cancer relates to diagnosed patients only.</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;Parameters are unobserved when it is not possible to record these, such as the progression of undiagnosed cancer. Unavailable parameters, however, can in principle be observed but not are missing, owing to data limitations</p></div></div></section>
+<section id="model-calibration-methods" class="level1">
+<h1><strong>Model Calibration Methods</strong></h1>
+<p>Once the calibration parameters have been selected, the steps in calibration include identifying the <a href="#sec-calibration-step-1">calibration target</a>, selecting the <a href="#sec-calibration-step-2">goodness of fit (GOF) measure</a>, choosing the parameter <a href="#sec-calibration-step-3">search algorithm</a>, specifying the <a href="#sec-calibration-step-4">acceptance criteria</a>, and specifying a <a href="#sec-calibration-step-5">stopping rule</a>.</p>
+<section id="sec-calibration-step-1" class="level2">
+<h2 class="anchored" data-anchor-id="sec-calibration-step-1">Calibration target</h2>
+</section>
+<section id="sec-calibration-step-2" class="level2">
+<h2 class="anchored" data-anchor-id="sec-calibration-step-2">GOF Measure</h2>
+</section>
+<section id="sec-calibration-step-3" class="level2">
+<h2 class="anchored" data-anchor-id="sec-calibration-step-3">Search algorithm</h2>
+</section>
+<section id="sec-calibration-step-4" class="level2">
+<h2 class="anchored" data-anchor-id="sec-calibration-step-4">Acceptance criteria</h2>
+</section>
+<section id="sec-calibration-step-5" class="level2">
+<h2 class="anchored" data-anchor-id="sec-calibration-step-5">Stopping rule</h2>
 
+
+</section>
+</section>
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
