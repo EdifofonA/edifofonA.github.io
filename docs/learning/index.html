@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Learning – Edifofon</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -35,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ac8197d8e283738e747a74027593b1b8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-a7dbef105f94eec2cfc51d9e5ccd1b62.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-4ef08d70eb90a2b5ef89103b797b45a9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-25276a3f8ee85c643f1e46d6a24a5237.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -104,7 +107,7 @@ background: #E6E6E6;
 </style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -117,7 +120,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -143,7 +146,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/icon.png" alt="" class="navbar-logo">
+    <img src="../assets/icon.png" alt="" class="navbar-logo light-content">
+    <img src="../assets/icon.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Edifofon</span>
@@ -217,7 +221,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBhbmFseXNpcw==">Survival analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBzdGF0aXN0aWNz">Bayesian statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVjaXNpb24lMjBtb2RlbGxpbmc=">Decision modelling <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3Vydml2YWwlMjBhbmFseXNpcw==">Survival analysis <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -240,29 +244,93 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-learning">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="U3Vydml2YWwlMjBhbmFseXNpcw==" data-listing-date-sort="1753657200000" data-listing-file-modified-sort="1753630667000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
-<div class="thumbnail"><a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="U3Vydml2YWwlMjBhbmFseXNpcw==" data-listing-date-sort="1753657200000" data-listing-file-modified-sort="1783084528197" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
+<div class="thumbnail"><a href="../learning/flexible-parametric-intro/index.html" class="no-external">
 
-<img loading="lazy" src="../learning/flexible-parametric-introduction" class="thumbnail-image">
+<img loading="lazy" src="../learning/flexible-parametric-intro" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../learning/flexible-parametric-introduction/index.html" class="no-external">Flexible Parametric Models - An Introduction</a>
+<a href="../learning/flexible-parametric-intro/index.html" class="no-external">Flexible parametric models, part 1: Introduction</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('U3Vydml2YWwlMjBhbmFseXNpcw=='); return false;">Survival analysis</div>
 
 </div>
-<div class="delink listing-description"><a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
-Recall that the Cox model is considered semi-parametric because it leaves the baseline hazard function unspecified. This approach allows the hazard to follow any shape that…
+<div class="delink listing-description"><a href="../learning/flexible-parametric-intro/index.html" class="no-external">
+<p>Work in Progress</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../learning/flexible-parametric-introduction/index.html" class="no-external">
+<a href="../learning/flexible-parametric-intro/index.html" class="no-external">
 <div class="listing-date">
 July 28, 2025
+</div>
+<div class="listing-author">
+Edifofon Akpan
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="RGVjaXNpb24lMjBtb2RlbGxpbmclMkNS" data-listing-date-sort="1751929200000" data-listing-file-modified-sort="1784964064821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="212">
+<div class="thumbnail"><a href="../learning/r-subsetting-safety-speed/index.html" class="no-external">
+
+<img loading="lazy" src="../learning/r-subsetting-safety-speed" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../learning/r-subsetting-safety-speed/index.html" class="no-external">Subsetting in R: a balance between safety and speed</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVjaXNpb24lMjBtb2RlbGxpbmc='); return false;">Decision modelling</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="../learning/r-subsetting-safety-speed/index.html" class="no-external">
+<p>Work in Progress</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../learning/r-subsetting-safety-speed/index.html" class="no-external">
+<div class="listing-date">
+July 8, 2025
+</div>
+<div class="listing-author">
+Edifofon Akpan
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="RGVjaXNpb24lMjBtb2RlbGxpbmclMkNCYXllc2lhbiUyMHN0YXRpc3RpY3M=" data-listing-date-sort="1751929200000" data-listing-file-modified-sort="1783326433244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="421">
+<div class="thumbnail"><a href="../learning/model-calibration-intro/index.html" class="no-external">
+
+<img loading="lazy" src="../learning/model-calibration-intro" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../learning/model-calibration-intro/index.html" class="no-external">Calibrating disease simulation models, part 1: Introduction</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGVjaXNpb24lMjBtb2RlbGxpbmc='); return false;">Decision modelling</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmF5ZXNpYW4lMjBzdGF0aXN0aWNz'); return false;">Bayesian statistics</div>
+
+</div>
+<div class="delink listing-description"><a href="../learning/model-calibration-intro/index.html" class="no-external">
+<p>Work in Progress</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../learning/model-calibration-intro/index.html" class="no-external">
+<div class="listing-date">
+July 8, 2025
 </div>
 <div class="listing-author">
 Edifofon Akpan
@@ -324,13 +392,14 @@ Edifofon Akpan
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

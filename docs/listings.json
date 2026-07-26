@@ -28,7 +28,9 @@
   {
     "listing": "/learning/index.html",
     "items": [
-      "/learning/flexible-parametric-introduction/index.html"
+      "/learning/flexible-parametric-intro/index.html",
+      "/learning/r-subsetting-safety-speed/index.html",
+      "/learning/model-calibration-intro/index.html"
     ]
   },
   {
