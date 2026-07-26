@@ -1,6 +1,6 @@
 ---
 title: "Subsetting data in R: a balance between safety and speed"
-date: 2025-07-08
+date: 2026-07-27
 description: "Work in Progress"
 image: ""
 categories:
